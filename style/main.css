@@ -1318,11 +1318,54 @@ footer .logo-wrapper img {
   font-size: 2rem;
   margin-top: 2rem;
   display: inline;
+  text-transform: uppercase;
+  line-height: 5rem;
+}
+.content-wrapper section.ordini-flow .tab-pane h4.light {
+  color: #2B2B2B;
+  font-family: "IstokWeb", sans-serif;
+  font-weight: 400;
+}
+.content-wrapper section.ordini-flow .tab-pane .b2 {
+  border-color: #2B2B2B;
 }
 .content-wrapper section.ordini-flow .tab-pane a {
   color: #2B2B2B;
   margin-left: 25px;
   text-decoration: underline;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-2 .flowSection .tab-pane h4 {
+  display: block;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-2 .flowSection .col-sm-4 {
+  margin-bottom: 25px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-2 .flowSection .checkBoxWrapper {
+  position: relative;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-2 .flowSection .checkBoxWrapper label {
+  position: absolute;
+  left: 20%;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-2 .flowSection .checkBoxWrapper input[type=checkbox] {
+  position: absolute;
+  left: 10%;
+  top: -10px;
+  width: 20px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-2 .selection-wrapper {
+  border: 3px solid #EDEDED;
+  width: 75%;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.content-wrapper section.ordini-flow .tab-pane#step-2 .selection-wrapper.active, .content-wrapper section.ordini-flow .tab-pane#step-2 .selection-wrapper:hover {
+  border-color: #276462;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-2 .selection-wrapper h4 {
+  color: #2B2B2B;
 }
 .content-wrapper section.ordini-flow .flowSection {
   padding: 25px 0;

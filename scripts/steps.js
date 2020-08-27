@@ -41,10 +41,5 @@ $(document).ready(function () {
 
   $(".sw-btn-next").on("click", function () {
     $(".step-wrapper").has(".done").addClass("done");
-    let totalPrice = 0;
-
-    totalPrice = parseInt($(".singleProductPrice").text());
-
-    $("#totalPrice").text(totalPrice);
   });
 });

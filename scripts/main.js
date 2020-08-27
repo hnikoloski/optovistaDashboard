@@ -77,6 +77,13 @@ $("#copyValues").on("click", function (e) {
   $("#altezzaXs").val($("#altezzaDx").val());
 });
 
+$(".singleProductPrice").each(function (i) {
+  $(this).addClass("productNum-" + (i + 1));
+});
+$(".selection-wrapper").on("click", function () {
+  $(this).toggleClass("active");
+});
+
 function getFileName(elm) {
   var fn = $(elm).val();
   var filename = fn.replace(/C:\\fakepath\\/i, "");
