@@ -1,0 +1,204 @@
+@import "../helpers/colors.scss";
+
+main {
+  section {
+
+    &.loginForm,
+    &.registerForm {
+      .cardsContainer {
+        .container-card {
+          h2 {
+            color: $green;
+            line-height: 8rem;
+            font-size: 4rem;
+          }
+
+          min-height: 70vh;
+          padding: 0 25px;
+
+          form {
+
+            input,
+            select {
+              border: 1px solid $lightGray;
+              font-size: 1.5rem;
+              height: 50px;
+              padding: 5px 20px;
+              border-radius: 20px;
+              margin-bottom: 20px;
+
+              &:focus {
+                outline: none;
+              }
+
+            }
+
+            select {
+              padding: 0 25px;
+              color: #757575;
+            }
+
+            button {
+              display: block;
+              border-radius: 20px;
+              background: $green;
+              color: #fff;
+              border: 1px solid $green;
+              width: 200px;
+              height: 40px;
+              font-size: 2rem;
+              margin: 20px auto;
+
+              &:focus {
+                outline: none;
+              }
+
+              &:hover {
+                background: $hoverGreen;
+              }
+
+            }
+
+            a {
+              color: $green;
+              font-size: 1.5rem;
+            }
+
+            &.login {
+              input {
+                width: 50%;
+              }
+            }
+
+            &.register {
+
+              input,
+              select {
+                width: 100%;
+              }
+
+              button {
+                width: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.registerCompany {
+      form {
+        &.addCompany {
+          input {
+            width: 100%;
+          }
+
+          .custom-file-label {
+            height: 50px;
+            font-size: 2rem;
+            line-height: 4rem;
+            border-radius: 20px;
+            // color: $green;
+
+            &::after {
+              opacity: 0;
+            }
+          }
+
+          .custom-file {
+            margin-bottom: 50px;
+
+          }
+        }
+      }
+    }
+
+    &.loginForm {
+      .cardsContainer {
+        .container-card {
+          padding: 5% 25px;
+        }
+      }
+    }
+
+    &.registerForm {
+      .cardsContainer {
+        .container-card {
+          min-height: 70vh;
+          padding: 1% 25px;
+        }
+      }
+    }
+  }
+}
+
+#forgotPasswordModal {
+  .modal-content {
+
+    border-radius: 20px;
+  }
+
+  .modal-header {
+    h5 {
+      color: $green;
+      font-size: 2rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    .close {
+      span {
+        font-size: 3rem;
+      }
+    }
+
+  }
+
+  .modal-body {
+    p {
+      display: block;
+      font-size: 1.5rem;
+
+    }
+
+    form {
+
+      input {
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid $lightGray;
+        font-size: 1.5rem;
+        height: 50px;
+        padding: 5px 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        display: block;
+        border-radius: 20px;
+        background: $green;
+        color: #fff;
+        border: 1px solid $green;
+        width: 200px;
+        height: 40px;
+        font-size: 2rem;
+        margin: 20px auto;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          background: $hoverGreen;
+        }
+
+      }
+    }
+
+  }
+}

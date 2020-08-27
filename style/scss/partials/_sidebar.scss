@@ -1,0 +1,196 @@
+@import "../helpers/colors.scss";
+
+nav {
+    &#sidebarMenu {
+        width: 9%;
+        background-color: $green;
+        padding: 0;
+
+        // padding: 20px 18px;
+        .sidebar-sticky {
+            overflow: hidden;
+            width: 9%;
+            height: 100%;
+        }
+
+        .logoWrapper {
+            // @include hor-center();
+            // @include ver_center();
+            height: 90px;
+            width: 90px;
+            margin: 0 auto;
+
+            h3 {
+                font-weight: bold;
+                font-size: 1.4rem;
+                color: #fff;
+                line-height: 2;
+            }
+        }
+
+
+        ul {
+            &.nav {
+                margin-top: 25%;
+
+
+            }
+
+            li {
+                // padding-left: 15%;
+
+                a:hover::before,
+                a:hover::after {
+                    opacity: 1;
+                }
+
+                &.active {
+
+                    a:hover::before,
+                    a:hover::after {
+                        opacity: 1;
+                    }
+
+                }
+
+
+                a {
+
+                    color: #fff;
+                    font-size: 1.2rem;
+                    padding: 0;
+                    height: 100px;
+                    position: relative;
+                    text-transform: uppercase;
+                    // animation-duration: 0.2s;
+                    // animation-name: slide;
+
+
+                    &:hover {
+                        background: url('../../../assets/img/icons/hoverSideBar.svg');
+                        background-repeat: no-repeat;
+                        background-size: 95%;
+                        background-position: 20px 61%;
+                        // border-top-left-radius: 100px;
+                        // border-bottom-left-radius: 100px;
+                        color: $green;
+
+
+
+                        &::after {
+                            content: " ";
+                            background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
+                            bottom: -21px;
+
+                        }
+
+                        &::before {
+                            content: ' ';
+                            background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
+                            top: -29px;
+                        }
+
+                    }
+
+
+
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        right: 0;
+                        opacity: 0;
+                        width: 30px;
+                        height: 30px;
+                        display: block;
+
+                    }
+                }
+
+            }
+        }
+
+        .sidebar-info {
+            font-size: 1.6rem;
+            margin-top: 10%;
+
+            h4 {
+                @include boldFont();
+                color: #fff;
+            }
+
+            h5 {
+                color: $green;
+                background-color: #fff;
+                border-radius: 30px;
+                padding: 15px 20px;
+                text-align: center;
+                width: 95px;
+                margin: 0 auto;
+                @include boldFont();
+                font-size: 2rem;
+                line-height: 1;
+            }
+
+            .side-delimiter {
+                height: 100px;
+                width: 2px;
+                background: #fff;
+                margin: 25px auto;
+            }
+
+            .bottomLogo {
+                background-color: #fff;
+                height: 40px;
+                width: 105px;
+                margin: 0 auto;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 5%;
+
+            }
+        }
+    }
+}
+
+nav {
+    &#sidebarMenu {
+        ul {
+            li {
+
+                &.active,
+                &.current {
+
+                    a {
+                        background: url(../../../assets/img/icons/hoverSideBar.svg);
+                        background-repeat: no-repeat;
+                        background-size: 95%;
+                        background-position: 20px 61%;
+                        color: #276462;
+
+                        .ci {
+                            filter: invert(58%) sepia(46%) saturate(492%) hue-rotate(129deg) brightness(92%) contrast(93%);
+                            -ms-filter: invert(58%) sepia(46%) saturate(492%) hue-rotate(129deg) brightness(92%) contrast(93%);
+                        }
+
+                        &::before {
+                            content: " ";
+                            background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
+                            opacity: 1;
+                            top: -27%;
+                            left: 83%;
+                        }
+
+                        &::after {
+                            content: " ";
+                            background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
+                            bottom: -20%;
+                            left: 83%;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

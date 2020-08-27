@@ -1,0 +1,110 @@
+@import "../helpers/colors.scss";
+
+.content-wrapper {
+  // padding: 10% 2%;
+  padding-top: 92px;
+  width: 100%;
+  background-color: #f7f7f7;
+
+  main {
+
+
+
+
+    section {
+
+
+
+
+      &.catalog {
+        .cardsContainer {
+          .container-card {
+            height: 420px;
+            overflow: hidden;
+
+            &.leftContainer {
+              .catalogCarousel {
+                position: relative;
+                top: 10%;
+
+                .slick-list {
+                  overflow: visible;
+                }
+
+                .slick-arrow {
+                  position: absolute;
+                  top: 50%;
+                  z-index: 400;
+                  cursor: pointer;
+
+                  &.prevArrow {
+                    left: 0;
+                  }
+
+                  &.nextArrow {
+                    right: 0;
+                  }
+                }
+
+                .slick-slide {
+
+                  &:focus {
+                    outline: none;
+                  }
+
+                  .slide-wrapper {
+                    opacity: 0.55;
+                    outline: none;
+                    margin: 0 auto;
+                    width: 80%;
+                    @include borderCard(#fff);
+                    padding: 20px;
+                    text-align: center;
+                    @include transit(500ms);
+
+                    img {
+                      margin: 0 auto;
+                      height: 111px;
+                      width: 112px;
+                    }
+
+                    h4 {
+                      @include boldFont();
+                      text-transform: uppercase;
+                      color: $black;
+                      font-size: 1.6rem;
+                    }
+
+                    p {
+                      font-size: 1.4rem;
+                      margin-bottom: 20px;
+                    }
+
+                    a {
+                      background: $green;
+                      border: none;
+                      border-radius: 20px;
+                      color: #fff;
+                      padding: 10px 25px;
+                      @include boldFont();
+                      line-height: 1;
+
+                      &:hover {
+                        text-decoration: none;
+                      }
+                    }
+
+                    &:hover {
+                      opacity: 1;
+                      @include scale(scale(1.1));
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

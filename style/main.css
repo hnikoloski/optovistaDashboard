@@ -1,0 +1,1827 @@
+/* ====== MIXINS ====== */
+/* ====== / MIXINS ====== */
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+.ci {
+  height: 30px;
+  width: 30px;
+  margin: 0 auto;
+  padding-top: 70px;
+  margin-bottom: -15px;
+}
+.ci.ci-home {
+  background: url(../../../assets/img/icons/home.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ci.ci-cart {
+  background: url(../../../assets/img/icons/cart.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ci.ci-computer {
+  background: url(../../../assets/img/icons/computer.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ci.ci-book {
+  background: url(../../../assets/img/icons/book.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ci.ci-discount {
+  background: url(../../../assets/img/icons/discount.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "IstokWebBold";
+  src: local("IstokWebBold"), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+nav {
+  color: #000 !important;
+  left: 9%;
+}
+nav.topNav {
+  width: 91%;
+  float: right;
+  height: 92px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  padding: 1%;
+  text-align: center;
+}
+nav.topNav .search-icon {
+  background: url("../../../assets/img/icons/search.svg");
+  height: 23px;
+  width: 23px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  left: 6%;
+  top: 22%;
+  z-index: 2;
+}
+nav.topNav .search-form:focus .search-icon:hover {
+  display: none;
+}
+nav.topNav .search-form {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 20px 40px;
+  color: #6CAAA8;
+  font-size: 1.5rem;
+}
+nav.topNav .search-form:focus {
+  border-color: transparent !important;
+  box-shadow: none;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+}
+nav .top-menu ul {
+  float: right;
+  display: block;
+  height: 40px;
+}
+nav .top-menu ul li {
+  display: inline;
+  line-height: 40px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+nav .top-menu ul li.hasNotification {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+nav .top-menu ul li.hasNotification::after {
+  content: " ";
+  background: url("../../../assets/img/icons/notificationBadge.svg") center center no-repeat;
+  background-size: cover;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: -10px;
+  right: 30%;
+}
+nav .top-menu ul li a:hover {
+  text-decoration: none;
+}
+nav .top-menu ul li img {
+  padding: 0 20px;
+}
+nav .top-menu ul li img.icons {
+  border-right: 2px solid #707070;
+}
+nav .top-menu ul li p {
+  display: inline;
+  padding: 0 15px;
+  font-size: 1.6rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  vertical-align: middle;
+}
+nav .top-menu ul li .profile-picture-wrapper {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+}
+nav .top-menu ul li .profile-picture-wrapper img {
+  object-fit: cover;
+  object-position: center center;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "IstokWebBold";
+  src: local("IstokWebBold"), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+nav#sidebarMenu {
+  width: 9%;
+  background-color: #276462;
+  padding: 0;
+}
+nav#sidebarMenu .sidebar-sticky {
+  overflow: hidden;
+  width: 9%;
+  height: 100%;
+}
+nav#sidebarMenu .logoWrapper {
+  height: 90px;
+  width: 90px;
+  margin: 0 auto;
+}
+nav#sidebarMenu .logoWrapper h3 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #fff;
+  line-height: 2;
+}
+nav#sidebarMenu ul.nav {
+  margin-top: 25%;
+}
+nav#sidebarMenu ul li a:hover::before,
+nav#sidebarMenu ul li a:hover::after {
+  opacity: 1;
+}
+nav#sidebarMenu ul li.active a:hover::before,
+nav#sidebarMenu ul li.active a:hover::after {
+  opacity: 1;
+}
+nav#sidebarMenu ul li a {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0;
+  height: 100px;
+  position: relative;
+  text-transform: uppercase;
+}
+nav#sidebarMenu ul li a:hover {
+  background: url("../../../assets/img/icons/hoverSideBar.svg");
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: 20px 61%;
+  color: #276462;
+}
+nav#sidebarMenu ul li a:hover::after {
+  content: " ";
+  background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
+  bottom: -21px;
+}
+nav#sidebarMenu ul li a:hover::before {
+  content: " ";
+  background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
+  top: -29px;
+}
+nav#sidebarMenu ul li a::before, nav#sidebarMenu ul li a::after {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+nav#sidebarMenu .sidebar-info {
+  font-size: 1.6rem;
+  margin-top: 10%;
+}
+nav#sidebarMenu .sidebar-info h4 {
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+nav#sidebarMenu .sidebar-info h5 {
+  color: #276462;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 15px 20px;
+  text-align: center;
+  width: 95px;
+  margin: 0 auto;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+}
+nav#sidebarMenu .sidebar-info .side-delimiter {
+  height: 100px;
+  width: 2px;
+  background: #fff;
+  margin: 25px auto;
+}
+nav#sidebarMenu .sidebar-info .bottomLogo {
+  background-color: #fff;
+  height: 40px;
+  width: 105px;
+  margin: 0 auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5%;
+}
+
+nav#sidebarMenu ul li.active a, nav#sidebarMenu ul li.current a {
+  background: url(../../../assets/img/icons/hoverSideBar.svg);
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: 20px 61%;
+  color: #276462;
+}
+nav#sidebarMenu ul li.active a .ci, nav#sidebarMenu ul li.current a .ci {
+  filter: invert(58%) sepia(46%) saturate(492%) hue-rotate(129deg) brightness(92%) contrast(93%);
+  -ms-filter: invert(58%) sepia(46%) saturate(492%) hue-rotate(129deg) brightness(92%) contrast(93%);
+}
+nav#sidebarMenu ul li.active a::before, nav#sidebarMenu ul li.current a::before {
+  content: " ";
+  background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
+  opacity: 1;
+  top: -27%;
+  left: 83%;
+}
+nav#sidebarMenu ul li.active a::after, nav#sidebarMenu ul li.current a::after {
+  content: " ";
+  background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
+  bottom: -20%;
+  left: 83%;
+  opacity: 1;
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "IstokWebBold";
+  src: local("IstokWebBold"), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+.content-wrapper {
+  padding-top: 92px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.content-wrapper main {
+  margin: 0;
+  padding: 30px 20px 6% 10%;
+}
+.content-wrapper main .dashboard-message {
+  background-color: #fff;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid #EDEDED;
+  box-shadow: 0px 3px 6px #0000000D;
+  padding: 25px;
+  height: 70px;
+  line-height: 70px;
+  overflow: hidden;
+  padding: 0;
+}
+.content-wrapper main .dashboard-message h3 {
+  line-height: 70px;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.content-wrapper main .dashboard-message .leftSection {
+  background: url("../../../assets/img/icons/badge.svg");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  max-height: 70px;
+  max-width: 350px;
+  width: 350px;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+}
+.content-wrapper main .dashboard-message .rightSection {
+  padding-left: 20px;
+}
+.content-wrapper main .dashboard-message .rightSection p {
+  color: #2B2B2B;
+  font-size: 1.6rem;
+}
+.content-wrapper main .dashboard-message .rightSection p span {
+  font-size: 1.6rem;
+}
+.content-wrapper main .dashboard-message .rightSection p span.bold {
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+}
+.content-wrapper main .dashboard-message .rightSection p span.discountAmount {
+  color: #276462;
+  font-size: 2rem;
+}
+.content-wrapper main .dashboard-message .rightSection p span.delimiter {
+  color: #a9cd23;
+}
+.content-wrapper main .dashboard-message .rightSection p span.promoCode {
+  text-transform: uppercase;
+}
+.content-wrapper main section {
+  margin-top: 20px;
+  padding: 0;
+}
+.content-wrapper main section h5 {
+  color: #276462;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.content-wrapper main section .container-card {
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid #EDEDED;
+  box-shadow: 0px 3px 6px #0000000D;
+  padding: 25px;
+  position: relative;
+  overflow-y: auto;
+}
+.content-wrapper main section hr {
+  border-color: #ededed;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card {
+  height: 645px;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable {
+  background-color: #ededed;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable.admin {
+  background-color: #276462;
+  color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable.admin::after {
+  content: "ADMIN";
+  position: absolute;
+  top: 35%;
+  right: 0%;
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable.admin:hover {
+  box-shadow: unset;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable.admin h5,
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable.admin h3 {
+  color: #fff;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable.admin .buttons-wrapper a i {
+  color: #fff;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable.admin .buttons-wrapper a i:hover {
+  opacity: 0.5;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable.admin .buttons-wrapper a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable .companyInfo {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable .buttons-wrapper {
+  position: absolute;
+  right: 15%;
+  bottom: 5%;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable .buttons-wrapper a {
+  margin-right: 10px;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable .buttons-wrapper a i {
+  font-size: 1.5rem;
+  color: #276462;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable .buttons-wrapper a i:hover {
+  opacity: 0.5;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable .buttons-wrapper a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .uploadPerson {
+  background-color: #fff;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .uploadPerson:hover {
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable {
+  border-radius: 0;
+  box-shadow: unset;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable:hover {
+  box-shadow: unset;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table {
+  text-align: center;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table th,
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table td {
+  vertical-align: middle;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table thead tr:hover {
+  background: none;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table th {
+  border-top: 0px;
+  border-bottom: 0px;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  color: #2B2B2B;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table tr {
+  height: 60px;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table tr:hover {
+  background: #f7f7f7;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table tr td {
+  font-size: 1.4rem;
+  color: #2B2B2B;
+  border-top: 0px;
+  border-bottom: 1px solid #EDEDED;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table tr td.details {
+  color: #276462;
+  text-decoration: underline;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table tr td.details::before {
+  content: " ";
+  height: 10px;
+  width: 17px;
+  background: url("../../../assets/img/icons/eye.svg") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 40%;
+}
+.content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer h6 {
+  color: #2B2B2B;
+  font-size: 1.4rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.content-wrapper main section.analyitics .companyTable {
+  cursor: pointer;
+  min-height: 80px;
+  border-radius: 20px;
+  box-shadow: 0 0 0pt 1px #ededed;
+  margin-bottom: 17px;
+}
+.content-wrapper main section.analyitics .companyTable.uploadCompany, .content-wrapper main section.analyitics .companyTable.uploadPerson {
+  box-shadow: none;
+  border: 1px dashed #676767;
+}
+.content-wrapper main section.analyitics .companyTable.uploadCompany:hover, .content-wrapper main section.analyitics .companyTable.uploadPerson:hover {
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.content-wrapper main section.analyitics .companyTable.uploadCompany h5, .content-wrapper main section.analyitics .companyTable.uploadPerson h5 {
+  line-height: 80px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 37px;
+  margin-bottom: 0;
+  position: relative;
+  color: #2B2B2B;
+}
+.content-wrapper main section.analyitics .companyTable.uploadCompany h5::before, .content-wrapper main section.analyitics .companyTable.uploadPerson h5::before {
+  content: url("../../../assets/img/icons/plus-circle.svg");
+  position: relative;
+  left: -5%;
+  top: 13px;
+}
+.content-wrapper main section.analyitics .companyTable:hover {
+  box-shadow: 0 0 0pt 3px #276462;
+}
+.content-wrapper main section.analyitics img {
+  width: 60%;
+  height: auto;
+  top: 50%;
+  transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+  position: absolute;
+  top: 50%;
+}
+.content-wrapper main section.analyitics .companyInfoContainer {
+  padding: 0;
+}
+.content-wrapper main section.analyitics .companyInfoContainer .companyInfo {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+}
+.content-wrapper main section.analyitics .companyInfoContainer .companyInfo h3 {
+  color: #2B2B2B;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.content-wrapper main section.analyitics .companyInfoContainer .companyInfo h5 {
+  font-family: "Istok Web", sans-serif;
+  font-weight: unset;
+  font-size: 1.4rem;
+  color: #2B2B2B;
+}
+.content-wrapper main section.analyitics .companyInfoContainer .companyInfo .buttons-wrapper {
+  position: absolute;
+  right: 15%;
+  bottom: -20%;
+}
+.content-wrapper main section.analyitics .companyInfoContainer .companyInfo .buttons-wrapper a {
+  margin-right: 10px;
+}
+.content-wrapper main section.analyitics .companyInfoContainer .companyInfo .buttons-wrapper a i {
+  font-size: 1.5rem;
+  color: #276462;
+}
+.content-wrapper main section.analyitics .companyInfoContainer .companyInfo .buttons-wrapper a i:hover {
+  opacity: 0.5;
+}
+.content-wrapper main section.analyitics .companyInfoContainer .companyInfo .buttons-wrapper a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card {
+  height: 420px;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.rightContainer {
+  background: url("../../../assets/img/ctaBg.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.rightContainer a {
+  background: #276462;
+  border-radius: 25px;
+  color: #fff;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  padding: 15px 30px;
+  position: absolute;
+  top: 70%;
+  left: 42%;
+  font-size: 1.3rem;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.rightContainer a:hover {
+  text-decoration: none;
+  background: #034c4a;
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "IstokWebBold";
+  src: local("IstokWebBold"), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+.content-wrapper {
+  padding-top: 92px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card {
+  height: 420px;
+  overflow: hidden;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel {
+  position: relative;
+  top: 10%;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-list {
+  overflow: visible;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 400;
+  cursor: pointer;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-arrow.prevArrow {
+  left: 0;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-arrow.nextArrow {
+  right: 0;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-slide:focus {
+  outline: none;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-slide .slide-wrapper {
+  opacity: 0.55;
+  outline: none;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid #EDEDED;
+  box-shadow: 0px 3px 6px #0000000D;
+  padding: 25px;
+  padding: 20px;
+  text-align: center;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-slide .slide-wrapper img {
+  margin: 0 auto;
+  height: 111px;
+  width: 112px;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-slide .slide-wrapper h4 {
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2B2B2B;
+  font-size: 1.6rem;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-slide .slide-wrapper p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-slide .slide-wrapper a {
+  background: #276462;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 25px;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-slide .slide-wrapper a:hover {
+  text-decoration: none;
+}
+.content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-slide .slide-wrapper:hover {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -ms-transform: scale(1.1) translateZ(0);
+  /* IE 9 */
+  -webkit-transform: scale(1.1) translateZ(0);
+  /* Chrome, Safari, Opera */
+  transform: scale(1.1) translateZ(0);
+}
+
+.notificationWindow {
+  width: 300px;
+  background: #fff;
+  border: 2px solid #676767;
+  position: absolute;
+  top: 58px;
+  left: 33%;
+  padding: 20px 15px;
+  text-align: left;
+  display: none;
+}
+.notificationWindow::before {
+  content: " ";
+  background: url(../../../assets/img/notificationBefore.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -19px;
+  left: 45%;
+  height: 30px;
+  width: 30px;
+}
+.notificationWindow .singleNotification {
+  padding: 5%;
+}
+.notificationWindow .singleNotification:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.notificationWindow h3 {
+  font-size: 2rem;
+  color: #276462;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+}
+.notificationWindow hr {
+  border-color: #707070;
+}
+.notificationWindow p {
+  font-size: 2rem;
+  color: #2B2B2B;
+  margin: 0;
+}
+
+nav .top-menu .userInfo {
+  height: 92px;
+  background: #fff;
+  width: 200px;
+  position: absolute;
+  bottom: -120px;
+  right: 0;
+  padding: 15px 20px;
+  border: 2px solid #676767;
+  border-radius: 20px;
+  display: none;
+}
+nav .top-menu .userInfo::before {
+  content: " ";
+  background: url(../../../assets/img/notificationBefore.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -19px;
+  left: 75%;
+  height: 30px;
+  width: 30px;
+}
+nav .top-menu .userInfo ul {
+  float: unset;
+  text-align: left;
+  padding-left: 0;
+}
+nav .top-menu .userInfo ul li {
+  display: list-item;
+  list-style: none;
+  line-height: 2;
+}
+nav .top-menu .userInfo ul li a {
+  color: #276462;
+  font-size: 1.6rem;
+}
+nav .top-menu .userInfo ul li a:hover {
+  text-decoration: underline;
+}
+
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 320px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+.modal.right .modal-content {
+  height: 90%;
+  background-color: transparent;
+  border: none;
+}
+.modal.right .modal-content .modal-header {
+  border-top-left-radius: 20px;
+  background: #276462;
+  color: #fff;
+  height: 65px;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 6% 0;
+}
+.modal.right .modal-content .modal-header ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.modal.right .modal-content .modal-header ul li {
+  display: inline-block;
+}
+.modal.right .modal-content .modal-header ul li img {
+  height: 25px;
+  width: 25px;
+}
+.modal.right .modal-content .modal-header ul li:nth-of-type(1) {
+  border-right: 2px solid #fff;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+.modal.right .modal-content .modal-header ul li h4 {
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+}
+.modal.right .modal-content .modal-header .close {
+  opacity: 1;
+  position: absolute;
+  top: 40%;
+  left: -50px;
+}
+.modal.right .modal-body {
+  padding: 15px;
+  background: #EDEDED;
+  border-bottom-left-radius: 20px;
+}
+.modal.right .modal-body .seeMore {
+  font-size: 1.4rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #2B2B2B;
+}
+
+.modal-card {
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid #EDEDED;
+  box-shadow: 0px 3px 6px #0000000D;
+  padding: 25px;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+}
+.modal-card::before {
+  content: " ";
+  background: url("../../../assets/img/modalCardBorder.svg") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+}
+.modal-card img {
+  width: 153px;
+}
+.modal-card h4 {
+  color: #276462;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.modal-card a.cardLink {
+  color: #276462;
+  display: block;
+  font-size: 1.4rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.modal-card a.removeFavCard {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 30px;
+  height: 30px;
+}
+.modal-card a.removeFavCard img {
+  height: 15px;
+  width: 15px;
+  margin-top: 7px;
+  margin-left: 8px;
+}
+.modal-card button {
+  color: #fff;
+  background: #276462;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+#addCompany .modal-content,
+#addUser .modal-content {
+  border-radius: 20px;
+}
+#addCompany .modal-content .modal-header h5,
+#addUser .modal-content .modal-header h5 {
+  font-size: 2rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  color: #276462;
+  margin-left: 15px;
+}
+#addCompany .modal-content .modal-header .close span,
+#addUser .modal-content .modal-header .close span {
+  font-size: 3rem;
+}
+#addCompany .modal-content .modal-body input,
+#addCompany .modal-content .modal-body select,
+#addUser .modal-content .modal-body input,
+#addUser .modal-content .modal-body select {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #EDEDED;
+  font-size: 1.5rem;
+  height: 50px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+#addCompany .modal-content .modal-body input:focus,
+#addCompany .modal-content .modal-body select:focus,
+#addUser .modal-content .modal-body input:focus,
+#addUser .modal-content .modal-body select:focus {
+  outline: none;
+}
+#addCompany .modal-content .modal-body input option,
+#addCompany .modal-content .modal-body select option,
+#addUser .modal-content .modal-body input option,
+#addUser .modal-content .modal-body select option {
+  font-size: 1.5rem;
+}
+#addCompany .modal-content .modal-body input[type=file],
+#addUser .modal-content .modal-body input[type=file] {
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+#addCompany .modal-content .modal-body button,
+#addUser .modal-content .modal-body button {
+  display: block;
+  border-radius: 20px;
+  background: #276462;
+  color: #fff;
+  border: 1px solid #276462;
+  width: 200px;
+  height: 40px;
+  font-size: 2rem;
+  margin: 10% auto 15px auto;
+}
+#addCompany .modal-content .modal-body button:focus,
+#addUser .modal-content .modal-body button:focus {
+  outline: none;
+}
+#addCompany .modal-content .modal-body button:hover,
+#addUser .modal-content .modal-body button:hover {
+  background: #034c4a;
+}
+#addCompany .modal-content .modal-body .custom-file-label,
+#addUser .modal-content .modal-body .custom-file-label {
+  height: 50px;
+  font-size: 2rem;
+  line-height: 4rem;
+  border-radius: 20px;
+}
+#addCompany .modal-content .modal-body .custom-file-label::after,
+#addUser .modal-content .modal-body .custom-file-label::after {
+  opacity: 0;
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "IstokWebBold";
+  src: local("IstokWebBold"), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+footer {
+  background: #fff;
+  margin: 38px 0 0 -1%;
+  padding: 30px;
+  height: 92px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 500;
+  border-top: 1px solid #EDEDED;
+}
+footer .copyrights {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+footer .copyrights::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #676767;
+  height: 40px;
+  width: 1px;
+}
+footer .copyrights p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  color: #2B2B2B;
+  line-height: 1.3;
+}
+footer .footer-menu .footer-menu-item {
+  display: inline;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-right: 12px;
+}
+footer .footer-menu .footer-menu-item a {
+  font-size: 2rem;
+  color: #2B2B2B;
+  font-weight: bold;
+}
+footer .footer-menu .footer-menu-item::after {
+  content: "|";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 20px;
+}
+footer .footer-menu .footer-menu-item:last-child::after {
+  display: none;
+}
+footer .logo-wrapper {
+  height: 30px;
+  width: 90px;
+  float: right;
+}
+footer .logo-wrapper img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "IstokWebBold";
+  src: local("IstokWebBold"), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+.content-wrapper {
+  padding-top: 92px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.content-wrapper main .main-top-bar {
+  max-height: 70px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  background-color: #276462;
+  border: 1px solid #EDEDED;
+  box-shadow: 0px 3px 6px #0000000D;
+  height: 70px;
+  line-height: 70px;
+  overflow: hidden;
+}
+.content-wrapper main .main-top-bar .bar-content-wrapper {
+  background: url(../../../assets/img/pathBg.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.content-wrapper main .main-top-bar .bar-content-wrapper a:hover {
+  text-decoration: none;
+}
+.content-wrapper main .main-top-bar .bar-content-wrapper a h3 {
+  line-height: 70px;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 46px;
+}
+.content-wrapper main .main-top-bar .bar-content-wrapper a h3::before {
+  content: " ";
+  background: url("../../../assets/img/icons/docAdd.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: 37%;
+  top: 30%;
+  height: 30px;
+  width: 34px;
+}
+.content-wrapper section.ordini .orderTableTitle h6 {
+  color: #2B2B2B;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.content-wrapper section.ordini .singleOrder {
+  border-bottom: 1px solid #676767;
+  min-height: 50px;
+}
+.content-wrapper section.ordini .ordersTable {
+  height: 40px;
+}
+.content-wrapper section.ordini .ordersTable h6 {
+  color: #2B2B2B;
+  font-size: 2rem;
+  line-height: 40px;
+}
+.content-wrapper section.ordini .ordersTable .toggleable {
+  text-align: right;
+  line-height: 40px;
+}
+.content-wrapper section.ordini .ordersTable .toggleable a {
+  background: #276462;
+  border-radius: 20px;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  position: relative;
+  margin-right: 100px;
+  border-color: #276462;
+  margin-bottom: 5px;
+}
+.content-wrapper section.ordini .ordersTable .toggleable a::after {
+  content: " ";
+  height: 30px;
+  position: absolute;
+  background: #676767;
+  width: 2px;
+  right: -30px;
+  top: 5px;
+}
+.content-wrapper section.ordini .ordersTable .toggleable a:hover {
+  background: #034c4a;
+}
+.content-wrapper section.ordini .ordersTable .toggleable i {
+  margin: 0;
+  padding: 0;
+}
+.content-wrapper section.ordini .ordersTable .toggleable i.ci.ci-arrowDown {
+  position: relative;
+}
+.content-wrapper section.ordini .ordersTable .toggleable i.ci.ci-arrowDown::before {
+  content: " ";
+  background: url(../../../assets/img/icons/arrowDown.svg) no-repeat center center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+}
+.content-wrapper section.ordini .collapse.show {
+  margin-top: 20px;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body {
+  border: none;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .leftBox .productDesc {
+  margin-bottom: 25px;
+  color: #2B2B2B;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .leftBox .productDesc h4 {
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .leftBox .productDesc h6 {
+  font-size: 1.4rem;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .rightBox {
+  background: #EDEDED;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .rightBox .col-sm-6 {
+  padding: 1% 5%;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .rightBox table {
+  width: 100%;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .rightBox table thead th {
+  padding: 15px 0;
+  text-align: center;
+  background: #fff;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .rightBox table tr {
+  text-align: left;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .rightBox table td {
+  width: 50%;
+  padding: 15px 0;
+  color: #2B2B2B;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .rightBox table td .bold {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .rightBox table td p {
+  font-size: 1.4rem;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .rightBox table.firstTable {
+  position: relative;
+}
+.content-wrapper section.ordini .collapse.show .card.card-body .rightBox table.firstTable::after {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: #fff;
+  right: -10%;
+  top: 0;
+}
+.content-wrapper section.ordini-flow .sw-theme-dots .toolbar > .btn {
+  background: #276462;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  margin-right: 20px;
+}
+.content-wrapper section.ordini-flow .sw > .nav .nav-link {
+  padding: 0.5rem 2rem;
+}
+.content-wrapper section.ordini-flow .tab-pane h4 {
+  color: #276462;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 2rem;
+  display: inline;
+}
+.content-wrapper section.ordini-flow .tab-pane a {
+  color: #2B2B2B;
+  margin-left: 25px;
+  text-decoration: underline;
+}
+.content-wrapper section.ordini-flow .flowSection {
+  padding: 25px 0;
+  border-bottom: 1px solid #EDEDED;
+}
+.content-wrapper section.ordini-flow .flowSection label {
+  color: #2B2B2B;
+  font-size: 1.4rem;
+}
+.content-wrapper section.ordini-flow .flowSection input,
+.content-wrapper section.ordini-flow .flowSection select {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  width: 100%;
+  height: 39px;
+  color: #5C5C5C;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 5px 20px;
+  border: 1px solid #EDEDED;
+}
+.content-wrapper section.ordini-flow .flowSection .checkBox {
+  top: 75%;
+  position: absolute;
+  right: 25%;
+}
+.content-wrapper section.ordini-flow .flowSection input[type=checkbox] {
+  border: none;
+  box-shadow: none;
+  border-radius: 6px;
+  border: 3px solid #EDEDED;
+  width: 10%;
+  float: right;
+}
+.content-wrapper section.ordini-flow .flowSection .checkBoxLabel {
+  position: absolute;
+  top: 30%;
+  right: 17%;
+}
+.content-wrapper section.ordini-flow .flowSection a {
+  line-height: 8rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #2B2B2B;
+  position: relative;
+  text-decoration: none;
+}
+.content-wrapper section.ordini-flow .flowSection a:hover {
+  text-decoration: none;
+}
+.content-wrapper section.ordini-flow .flowSection a i {
+  height: 30px;
+  width: 30px;
+}
+.content-wrapper section.ordini-flow .flowSection a i.ci-arrowDown::after {
+  content: " ";
+  background: url(../../../assets/img/icons/arrowDown.svg) no-repeat center center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 25px;
+  right: -40px;
+}
+.content-wrapper section.ordini-flow .miniCart .container-card {
+  padding: 0;
+}
+.content-wrapper section.ordini-flow .miniCart .container-card h5 {
+  margin: 25px;
+}
+.content-wrapper section.ordini-flow .miniCart .container-card .cart {
+  margin: 0 auto;
+}
+.content-wrapper section.ordini-flow .miniCart .container-card .cart .col-sm-6 {
+  height: 35px;
+  padding: 0;
+}
+.content-wrapper section.ordini-flow .miniCart .container-card .cart p,
+.content-wrapper section.ordini-flow .miniCart .container-card .cart span {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+}
+.content-wrapper section.ordini-flow .miniCart .priceBox {
+  background: #6CAAA8;
+}
+.content-wrapper section.ordini-flow .miniCart .priceBox h5,
+.content-wrapper section.ordini-flow .miniCart .priceBox span {
+  color: #fff;
+  font-size: 2.6rem;
+  font-family: "IstokWeb", sans-serif;
+  font-weight: 400;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "IstokWebBold";
+  src: local("IstokWebBold"), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+.content-wrapper {
+  padding-top: 92px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.content-wrapper main .pageTitle {
+  color: #2B2B2B;
+  font-size: 2.6rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  margin-left: 48px;
+  position: relative;
+}
+.content-wrapper main section.preferiti .modal-card {
+  height: 300px;
+}
+.content-wrapper main section.preferiti .modal-card a.removeFavCard {
+  background: url(../../../assets/img/icons/star-white.svg);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content-wrapper main section.preferiti .modal-card a.removeFavCard img {
+  width: 16px;
+}
+.content-wrapper main section.preferiti .modal-card a.removeFavCard.hovered {
+  background: url(../../../assets/img/icons/trash-alt-solid.svg);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content-wrapper main section.preferiti .modal-card img {
+  width: 290px;
+  margin-bottom: 20px;
+}
+.content-wrapper main section.preferiti .modal-card h4 {
+  margin-bottom: 40px;
+}
+.content-wrapper main section.preferiti .modal-card .cardLink {
+  margin-bottom: 35px;
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "IstokWebBold";
+  src: local("IstokWebBold"), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+main section.loginForm .cardsContainer .container-card, main section.registerForm .cardsContainer .container-card {
+  min-height: 70vh;
+  padding: 0 25px;
+}
+main section.loginForm .cardsContainer .container-card h2, main section.registerForm .cardsContainer .container-card h2 {
+  color: #276462;
+  line-height: 8rem;
+  font-size: 4rem;
+}
+main section.loginForm .cardsContainer .container-card form input,
+main section.loginForm .cardsContainer .container-card form select, main section.registerForm .cardsContainer .container-card form input,
+main section.registerForm .cardsContainer .container-card form select {
+  border: 1px solid #EDEDED;
+  font-size: 1.5rem;
+  height: 50px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+main section.loginForm .cardsContainer .container-card form input:focus,
+main section.loginForm .cardsContainer .container-card form select:focus, main section.registerForm .cardsContainer .container-card form input:focus,
+main section.registerForm .cardsContainer .container-card form select:focus {
+  outline: none;
+}
+main section.loginForm .cardsContainer .container-card form select, main section.registerForm .cardsContainer .container-card form select {
+  padding: 0 25px;
+  color: #757575;
+}
+main section.loginForm .cardsContainer .container-card form button, main section.registerForm .cardsContainer .container-card form button {
+  display: block;
+  border-radius: 20px;
+  background: #276462;
+  color: #fff;
+  border: 1px solid #276462;
+  width: 200px;
+  height: 40px;
+  font-size: 2rem;
+  margin: 20px auto;
+}
+main section.loginForm .cardsContainer .container-card form button:focus, main section.registerForm .cardsContainer .container-card form button:focus {
+  outline: none;
+}
+main section.loginForm .cardsContainer .container-card form button:hover, main section.registerForm .cardsContainer .container-card form button:hover {
+  background: #034c4a;
+}
+main section.loginForm .cardsContainer .container-card form a, main section.registerForm .cardsContainer .container-card form a {
+  color: #276462;
+  font-size: 1.5rem;
+}
+main section.loginForm .cardsContainer .container-card form.login input, main section.registerForm .cardsContainer .container-card form.login input {
+  width: 50%;
+}
+main section.loginForm .cardsContainer .container-card form.register input,
+main section.loginForm .cardsContainer .container-card form.register select, main section.registerForm .cardsContainer .container-card form.register input,
+main section.registerForm .cardsContainer .container-card form.register select {
+  width: 100%;
+}
+main section.loginForm .cardsContainer .container-card form.register button, main section.registerForm .cardsContainer .container-card form.register button {
+  width: 200px;
+}
+main section.registerCompany form.addCompany input {
+  width: 100%;
+}
+main section.registerCompany form.addCompany .custom-file-label {
+  height: 50px;
+  font-size: 2rem;
+  line-height: 4rem;
+  border-radius: 20px;
+}
+main section.registerCompany form.addCompany .custom-file-label::after {
+  opacity: 0;
+}
+main section.registerCompany form.addCompany .custom-file {
+  margin-bottom: 50px;
+}
+main section.loginForm .cardsContainer .container-card {
+  padding: 5% 25px;
+}
+main section.registerForm .cardsContainer .container-card {
+  min-height: 70vh;
+  padding: 1% 25px;
+}
+
+#forgotPasswordModal .modal-content {
+  border-radius: 20px;
+}
+#forgotPasswordModal .modal-header h5 {
+  color: #276462;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+}
+#forgotPasswordModal .modal-header .close span {
+  font-size: 3rem;
+}
+#forgotPasswordModal .modal-body p {
+  display: block;
+  font-size: 1.5rem;
+}
+#forgotPasswordModal .modal-body form input {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #EDEDED;
+  font-size: 1.5rem;
+  height: 50px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+#forgotPasswordModal .modal-body form input:focus {
+  outline: none;
+}
+#forgotPasswordModal .modal-body form button {
+  display: block;
+  border-radius: 20px;
+  background: #276462;
+  color: #fff;
+  border: 1px solid #276462;
+  width: 200px;
+  height: 40px;
+  font-size: 2rem;
+  margin: 20px auto;
+}
+#forgotPasswordModal .modal-body form button:focus {
+  outline: none;
+}
+#forgotPasswordModal .modal-body form button:hover {
+  background: #034c4a;
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "IstokWebBold";
+  src: local("IstokWebBold"), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+.content-wrapper {
+  padding-top: 92px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.content-wrapper main section.tutorial .pageTitle {
+  color: #2B2B2B;
+  font-size: 2.6rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  margin-left: 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+.content-wrapper main section.tutorial .pageTitle i.ci {
+  width: 40px;
+  height: 30px;
+  display: inline-block;
+  padding: 0;
+  vertical-align: text-top;
+  margin-right: 15px;
+}
+.content-wrapper main section.tutorial .pageTitle i.ci.ci-computer-green {
+  background: url(../../../assets/img/icons/computer-green.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content-wrapper main section.tutorial .modal-card {
+  height: 300px;
+}
+.content-wrapper main section.tutorial .modal-card::before {
+  background: unset;
+}
+.content-wrapper main section.tutorial .loader {
+  margin: 0 auto;
+  border: 8px solid #EDEDED;
+  /* Light grey */
+  border-top: 8px solid #276462;
+  /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "IstokWebBold";
+  src: local("IstokWebBold"), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+.content-wrapper main section.catalog .pageTitle {
+  color: #2B2B2B;
+  font-size: 2.6rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  margin-left: 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+.content-wrapper main section.catalog .pageTitle i.ci {
+  width: 40px;
+  height: 30px;
+  display: inline-block;
+  padding: 0;
+  vertical-align: text-top;
+  margin-right: 15px;
+}
+.content-wrapper main section.catalog .pageTitle i.ci.ci-book-green {
+  background: url(../../../assets/img/icons/book-green.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content-wrapper main section.catalog .modal-card {
+  min-height: 350px;
+}
+.content-wrapper main section.catalog .modal-card::before {
+  background: unset;
+}
+.content-wrapper main section.catalog .modal-card .imgWrapper {
+  max-height: 400px;
+}
+.content-wrapper main section.catalog .modal-card .imgWrapper img {
+  height: auto;
+  width: auto;
+}
+.content-wrapper main section.catalog .modal-card h4 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  line-height: 2.5;
+  color: #2B2B2B;
+  margin: 0;
+  text-transform: uppercase;
+}
+.content-wrapper main section.catalog .modal-card p {
+  font-size: 1.4rem;
+  color: #2B2B2B;
+  margin-bottom: 20px;
+}
+.content-wrapper main section.catalog .modal-card a {
+  color: #fff;
+  background: #276462;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  padding: 10px 35px;
+  font-size: 1.3rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content-wrapper main section.catalog .loader {
+  margin: 0 auto;
+  border: 8px solid #EDEDED;
+  /* Light grey */
+  border-top: 8px solid #276462;
+  /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "IstokWebBold";
+  src: local("IstokWebBold"), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+.sw.sw-justified > .nav > li::after {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  width: 15%;
+  height: 5px;
+  background-color: #EDEDED;
+  border-radius: 3px;
+  z-index: 1;
+}
+.sw.sw-justified > .nav > li.done::after {
+  background-color: #276462;
+}
+.sw.sw-justified > .nav > li:last-of-type::after {
+  opacity: 0;
+  display: none;
+}
+
+* {
+  font-family: "Istok Web", sans-serif;
+  font-size: 10px;
+  -webkit-transition: right 0.5s ease;
+  -moz-transition: right 0.5s ease;
+  -ms-transition: right 0.5s ease;
+  -o-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+}
+
+html {
+  background: #F7F7F7;
+}
+
+.grayBg {
+  background-color: #F7F7F7;
+}
+
+.clear {
+  padding: 0;
+  margin: 0;
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  background: #EDEDED;
+  margin: 3rem 0;
+}
+
+/*# sourceMappingURL=main.css.map */

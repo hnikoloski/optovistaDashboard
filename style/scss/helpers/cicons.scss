@@ -1,0 +1,33 @@
+.ci {
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    padding-top: 70px;
+    margin-bottom: -15px;
+
+    &.ci-home {
+        background: url(../../../assets/img/icons/home.svg);
+        @include bg-props(contain, center, no-repeat);
+    }
+
+    &.ci-cart {
+        background: url(../../../assets/img/icons/cart.svg);
+        @include bg-props(contain, center, no-repeat);
+    }
+
+    &.ci-computer {
+        background: url(../../../assets/img/icons/computer.svg);
+        @include bg-props(contain, center, no-repeat);
+    }
+
+    &.ci-book {
+        background: url(../../../assets/img/icons/book.svg);
+        @include bg-props(contain, center, no-repeat);
+    }
+
+    &.ci-discount {
+        background: url(../../../assets/img/icons/discount.svg);
+        @include bg-props(contain, center, no-repeat);
+    }
+
+}

@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Dashboard Template · Optovista</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- <link rel="stylesheet" href="./style/bootstrap/bootstrap.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <!-- Custom styles for this template -->
+    <link href="./style/dashboard.css" rel="stylesheet" />
+    <link href="./style/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar sticky-top flex-md-nowrap shadow topNav">
+      <button
+        class="navbar-toggler position-absolute d-md-none collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="col-sm-4">
+        <span class="search-icon"></span>
+        <!-- <img src="./assets/img/icons/search.svg" alt="Search Icon" /> -->
+
+        <input
+          class="search-form form-control"
+          type="text"
+          aria-label="Search"
+        />
+      </div>
+      <div class="col-sm-4 logo">
+        <img src="./assets/img/icons/UNO.svg" alt="uno logo" />
+      </div>
+      <div class="col-sm-4 top-menu">
+        <ul class="navbar-nav">
+          <li
+            class="nav-item fav-modal-open"
+            data-toggle="modal"
+            data-target="#fav-modal"
+          >
+            <a href="#!">
+              <img
+                src="./assets/img/icons/star.svg"
+                alt="Star Icon"
+                class="icons"
+              />
+            </a>
+          </li>
+          <li class="nav-item hasNotification">
+            <a href="#!">
+              <img
+                src="./assets/img/icons/bell.svg"
+                alt="Notification Icon"
+                class="icons"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <p class="userFullName">Mario Rossi</p>
+          </li>
+          <li class="nav-item userToolbar">
+            <div class="profile-picture-wrapper">
+              <img
+                src="./assets/img/profilePicture.png"
+                alt="Profile Picture"
+              />
+            </div>
+          </li>
+        </ul>
+        <div class="notificationWindow">
+          <div class="singleNotification">
+            <h3>OFFERTA SPECIALE</h3>
+            <p>20% di sconto su tutte le lenti progressive</p>
+          </div>
+          <hr />
+          <div class="singleNotification">
+            <h3>OFFERTA SPECIALE</h3>
+            <p>20% di sconto su tutte le lenti progressive</p>
+          </div>
+        </div>
+        <div class="userInfo">
+          <ul>
+            <li><a href="#!">Profile</a></li>
+            <li><a href="#!">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid content-wrapper">
+      <div class="row">
+        <nav
+          id="sidebarMenu"
+          class="col-md-3 col-lg-2 d-md-block sidebar collapse"
+        >
+          <div class="sidebar-sticky pt-3 text-center">
+            <div class="logoWrapper">
+              <img src="./assets/img/logo.png" alt="Logo" />
+              <h3>Ottica Milano</h3>
+            </div>
+            <ul class="nav flex-column">
+              <li class="nav-item side-item current">
+                <a class="nav-link" href="#">
+                  <div class="ci ci-home"></div>
+                  Home <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item side-item">
+                <a class="nav-link" href="#">
+                  <div class="ci ci-cart"></div>
+                  Ordini
+                </a>
+              </li>
+              <li class="nav-item side-item">
+                <a class="nav-link" href="#">
+                  <div class="ci ci-computer"></div>
+
+                  TUTORIAL
+                </a>
+              </li>
+              <li class="nav-item side-item">
+                <a class="nav-link" href="#">
+                  <div class="ci ci-book"></div>
+
+                  CATALOGHI
+                </a>
+              </li>
+              <li class="nav-item side-item">
+                <a class="nav-link" href="#">
+                  <div class="ci ci-discount"></div>
+
+                  OFFERTE
+                </a>
+              </li>
+            </ul>
+
+            <div class="sidebar-info">
+              <h4>Eurobonus:</h4>
+              <div class="bonus-amount"><h5>3446</h5></div>
+              <div class="side-delimiter"></div>
+              <div class="bottomLogo">
+                <img src="./assets/img/bottomLogo.svg" alt="bottom logo" />
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <main role="main grayBg" class="col">
+          <div class="container-fluid dashboard-message">
+            <div class="row">
+              <div class="col-sm-4 leftSection"><h3>OFFERTA SPECIALE</h3></div>
+              <div class="col-sm-8 rightSection">
+                <p>
+                  <span class="bold">SOLO PER TE:</span>
+                  <span class="bold discountAmount">20%</span> di sconto su
+                  tutte le lenti progressive<span class="bold delimiter">
+                    / </span
+                  >CODICE SCONTO: "<span class="bold promoCode">PROMO 20</span>"
+                </p>
+              </div>
+            </div>
+          </div>
+          <section class="container-fluid analyitics">
+            <div class="row">
+              <div class="col-sm-4 cardsContainer">
+                <div class="leftContainer container-card">
+                  <h5>STORICO ORDINI</h5>
+                  <hr />
+                  <div class="row companyTable">
+                    <div class="col-sm-3">
+                      <img src="./assets/img/logo.png" alt="Logo" />
+                    </div>
+                    <div class="col-sm-9 companyInfoContainer">
+                      <div class="companyInfo">
+                        <h3>Company Title</h3>
+                        <h5>Company Address</h5>
+                        <div class="buttons-wrapper">
+                          <a href="#!" title="Edit">
+                            <i class="fas fa-pencil-alt"></i
+                          ></a>
+                          <a href="#!" title="Open">
+                            <i class="fas fa-arrow-right"></i>
+                          </a>
+                          <a href="#!" title="Delete">
+                            <i class="far fa-trash-alt"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row companyTable">
+                    <div class="col-sm-3">
+                      <img src="./assets/img/logo.png" alt="Logo" />
+                    </div>
+                    <div class="col-sm-9 companyInfoContainer">
+                      <div class="companyInfo">
+                        <h3>Company Title</h3>
+                        <h5>Company Address</h5>
+                        <div class="buttons-wrapper">
+                          <a href="#!" title="Edit">
+                            <i class="fas fa-pencil-alt"></i
+                          ></a>
+                          <a href="#!" title="Open">
+                            <i class="fas fa-arrow-right"></i>
+                          </a>
+                          <a href="#!" title="Delete">
+                            <i class="far fa-trash-alt"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row companyTable">
+                    <div class="col-sm-3">
+                      <img src="./assets/img/logo.png" alt="Logo" />
+                    </div>
+                    <div class="col-sm-9 companyInfoContainer">
+                      <div class="companyInfo">
+                        <h3>Company Title</h3>
+                        <h5>Company Address</h5>
+                        <div class="buttons-wrapper">
+                          <a href="#!" title="Edit">
+                            <i class="fas fa-pencil-alt"></i
+                          ></a>
+                          <a href="#!" title="Open">
+                            <i class="fas fa-arrow-right"></i>
+                          </a>
+                          <a href="#!" title="Delete">
+                            <i class="far fa-trash-alt"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row companyTable">
+                    <div class="col-sm-3">
+                      <img src="./assets/img/logo.png" alt="Logo" />
+                    </div>
+                    <div class="col-sm-9 companyInfoContainer">
+                      <div class="companyInfo">
+                        <h3>Company Title</h3>
+                        <h5>Company Address</h5>
+                        <div class="buttons-wrapper">
+                          <a href="#!" title="Edit">
+                            <i class="fas fa-pencil-alt"></i
+                          ></a>
+                          <a href="#!" title="Open">
+                            <i class="fas fa-arrow-right"></i>
+                          </a>
+                          <a href="#!" title="Delete">
+                            <i class="far fa-trash-alt"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row companyTable">
+                    <div class="col-sm-3">
+                      <img src="./assets/img/logo.png" alt="Logo" />
+                    </div>
+                    <div class="col-sm-9 companyInfoContainer">
+                      <div class="companyInfo">
+                        <h3>Company Title</h3>
+                        <h5>Company Address</h5>
+                        <div class="buttons-wrapper">
+                          <a href="#!" title="Edit">
+                            <i class="fas fa-pencil-alt"></i
+                          ></a>
+                          <a href="#!" title="Open">
+                            <i class="fas fa-arrow-right"></i>
+                          </a>
+                          <a href="#!" title="Delete">
+                            <i class="far fa-trash-alt"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="row companyTable uploadCompany"
+                    data-toggle="modal"
+                    data-target="#addCompany"
+                  >
+                    <div class="col-sm-12">
+                      <h5>Aggiungi punto vendita</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Left Card End-->
+              <div class="col-sm-4 cardsContainer">
+                <div class="middleContainer container-card">
+                  <h5>UTENTI</h5>
+                  <hr />
+                  <div class="row companyTable admin">
+                    <div class="col-sm-3">
+                      <img src="./assets/img/logo.png" alt="Logo" />
+                    </div>
+                    <div class="col-sm-9 companyInfoContainer">
+                      <div class="companyInfo">
+                        <h3>Company Title</h3>
+                        <h5>Company Address</h5>
+                      </div>
+                      <div class="buttons-wrapper">
+                        <a href="#!" title="Edit">
+                          <i class="fas fa-pencil-alt"></i
+                        ></a>
+
+                        <a href="#!" title="Delete">
+                          <i class="far fa-trash-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row companyTable">
+                    <div class="col-sm-3">
+                      <img src="./assets/img/logo.png" alt="Logo" />
+                    </div>
+                    <div class="col-sm-9 companyInfoContainer">
+                      <div class="companyInfo">
+                        <h3>Company Title</h3>
+                        <h5>Company Address</h5>
+                      </div>
+                      <div class="buttons-wrapper">
+                        <a href="#!" title="Edit">
+                          <i class="fas fa-pencil-alt"></i
+                        ></a>
+
+                        <a href="#!" title="Delete">
+                          <i class="far fa-trash-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row companyTable">
+                    <div class="col-sm-3">
+                      <img src="./assets/img/logo.png" alt="Logo" />
+                    </div>
+                    <div class="col-sm-9 companyInfoContainer">
+                      <div class="companyInfo">
+                        <h3>Company Title</h3>
+                        <h5>Company Address</h5>
+                      </div>
+                      <div class="buttons-wrapper">
+                        <a href="#!" title="Edit">
+                          <i class="fas fa-pencil-alt"></i
+                        ></a>
+
+                        <a href="#!" title="Delete">
+                          <i class="far fa-trash-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row companyTable">
+                    <div class="col-sm-3">
+                      <img src="./assets/img/logo.png" alt="Logo" />
+                    </div>
+                    <div class="col-sm-9 companyInfoContainer">
+                      <div class="companyInfo">
+                        <h3>Company Title</h3>
+                        <h5>Company Address</h5>
+                      </div>
+                      <div class="buttons-wrapper">
+                        <a href="#!" title="Edit">
+                          <i class="fas fa-pencil-alt"></i
+                        ></a>
+
+                        <a href="#!" title="Delete">
+                          <i class="far fa-trash-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="row companyTable uploadPerson"
+                    data-toggle="modal"
+                    data-target="#addUser"
+                  >
+                    <div class="col-sm-12">
+                      <h5>Aggiungi punto vendita</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--middle card end-->
+              <div class="col-sm-4 cardsContainer">
+                <div class="rightContainer container-card scrollable">
+                  <h5>Container Title</h5>
+                  <hr />
+                  <div class="row companyTable">
+                    <table class="table">
+                      <thead class="">
+                        <tr>
+                          <th scope="col">Data</th>
+                          <th scope="col">N° ORDINE</th>
+                          <th scope="col">RIFERIMENTO</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>25-06-2020</td>
+                          <td>330388</td>
+                          <td>Mario Rossi</td>
+                          <td class="details">
+                            <span class="ci ci-eye"></span>Dettaglio
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h6 href="#!" class="text-center">VEDI TUTTI</h6>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="container-fluid catalog">
+            <div class="row">
+              <div class="col-sm-8 cardsContainer">
+                <div class="leftContainer container-card">
+                  <h5>CATALOGHI</h5>
+                  <hr />
+                  <div class="catalogCarousel">
+                    <div>
+                      <div class="slide-wrapper">
+                        <img
+                          src="./assets/img/slider-imgs/slider1.svg"
+                          alt="Slider 1"
+                        />
+                        <h4>Listino Confidenziale</h4>
+                        <p>Lenti oftalmiche 2020</p>
+                        <a href="#!">SCARICA</a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="slide-wrapper">
+                        <img
+                          src="./assets/img/slider-imgs/slider1.svg"
+                          alt="Slider 1"
+                        />
+                        <h4>Listino Confidenziale</h4>
+                        <p>Lenti oftalmiche 2020</p>
+                        <a href="#!">SCARICA</a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="slide-wrapper">
+                        <img
+                          src="./assets/img/slider-imgs/slider1.svg"
+                          alt="Slider 1"
+                        />
+                        <h4>Listino Confidenziale</h4>
+                        <p>Lenti oftalmiche 2020</p>
+                        <a href="#!">SCARICA</a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="slide-wrapper">
+                        <img
+                          src="./assets/img/slider-imgs/slider1.svg"
+                          alt="Slider 1"
+                        />
+                        <h4>Listino Confidenziale</h4>
+                        <p>Lenti oftalmiche 2020</p>
+                        <a href="#!">SCARICA</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 cardsContainer">
+                <div class="rightContainer container-card">
+                  <a href="#!" class="greenBtn">SCARICA</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <div class="row">
+              <div class="col-sm-6 copyrights">
+                <p>
+                  Optovista SpA | Via Commenda 1/2 - 40012 Calderara di Reno
+                  (BO) | tel. 051 727012 P.IVA: 01579131200 | C.F. | REGISTRO
+                  IMPRESE BO: 01579131200
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <ul class="footer-menu">
+                  <li class="footer-menu-item"><a href="#!">Privacy</a></li>
+                  <li class="footer-menu-item"><a href="#!">Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-2">
+                <div class="logo-wrapper">
+                  <img src="./assets/img/icons/UNO.svg" alt="Footer Logo" />
+                </div>
+              </div>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <!-- Modals Start -->
+    <!-- Favourites Modal -->
+    <div
+      class="modal right fade"
+      id="fav-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="fav-modalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/img/closeModal.svg" alt="Close modal" />
+            </button>
+            <ul>
+              <li class="modalIcon">
+                <img src="./assets/img/icons/star-white.svg" alt="" />
+              </li>
+              <li class="modalTitle">
+                <h4>
+                  Preferiti
+                </h4>
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal-body">
+            <div class="modal-card">
+              <a href="#!" class="removeFavCard"
+                ><img
+                  src="./assets/img/icons/star-white.svg"
+                  alt="White star icon"
+              /></a>
+              <img src="./assets/img/modalCardLogo.svg" />
+              <h4>Sole e sport</h4>
+              <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+              <button>ORDINA PRODOTTO</button>
+            </div>
+            <div class="modal-card">
+              <a href="#!" class="removeFavCard"
+                ><img
+                  src="./assets/img/icons/star-white.svg"
+                  alt="White star icon"
+              /></a>
+              <img src="./assets/img/modalCardLogo.svg" />
+              <h4>Sole e sport</h4>
+              <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+              <button>ORDINA PRODOTTO</button>
+            </div>
+            <div class="modal-card">
+              <a href="#!" class="removeFavCard"
+                ><img
+                  src="./assets/img/icons/star-white.svg"
+                  alt="White star icon"
+              /></a>
+              <img src="./assets/img/modalCardLogo.svg" />
+              <h4>Sole e sport</h4>
+              <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+              <button>ORDINA PRODOTTO</button>
+            </div>
+            <div class="modal-card">
+              <a href="#!" class="removeFavCard"
+                ><img
+                  src="./assets/img/icons/star-white.svg"
+                  alt="White star icon"
+              /></a>
+              <img src="./assets/img/modalCardLogo.svg" />
+              <h4>Sole e sport</h4>
+              <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+              <button>ORDINA PRODOTTO</button>
+            </div>
+            <div class="text-center">
+              <a href="./preferiti.html" class="seeMore">Vedi Tutti</a>
+            </div>
+          </div>
+        </div>
+        <!-- modal-content -->
+      </div>
+      <!-- modal-dialog -->
+    </div>
+    <!-- Fav modal End -->
+    <!-- Add store -->
+    <div
+      class="modal fade"
+      id="addCompany"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="addCompany"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="addCompanyTitle">
+              Add new Store
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="text-center align-self-center addCompany">
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <input type="text" placeholder="Store Title" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="text" placeholder="Store Address" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="text" placeholder="Ragione sociale" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <select
+                    required=""
+                    name="customerProvinceInput"
+                    id="customerProvinceInput"
+                    class="form-control input-sm empty"
+                  >
+                    <option value="" selected="selected">Provincia</option>
+                    <option value="AG">AGRIGENTO</option>
+                    <option value="AL">ALESSANDRIA</option>
+                    <option value="AN">ANCONA</option>
+                    <option value="AO">AOSTA</option>
+                    <option value="AR">AREZZO</option>
+                    <option value="AP">ASCOLI PICENO</option>
+                    <option value="AT">ASTI</option>
+                    <option value="AV">AVELLINO</option>
+                    <option value="BA">BARI</option>
+                    <option value="BT">Barletta-Andria-Trani</option>
+                    <option value="BL">BELLUNO</option>
+                    <option value="BN">BENEVENTO</option>
+                    <option value="BG">BERGAMO</option>
+                    <option value="BI">BIELLA</option>
+                    <option value="BO">BOLOGNA</option>
+                    <option value="BZ">BOLZANO</option>
+                    <option value="BS">BRESCIA</option>
+                    <option value="BR">BRINDISI</option>
+                    <option value="CA">CAGLIARI</option>
+                    <option value="CL">CALTANISSETTA</option>
+                    <option value="CB">CAMPOBASSO</option>
+                    <option value="CI">Carbonia-Iglesias</option>
+                    <option value="CE">CASERTA</option>
+                    <option value="CT">CATANIA</option>
+                    <option value="CZ">CATANZARO</option>
+                    <option value="CH">CHIETI</option>
+                    <option value="CO">COMO</option>
+                    <option value="CS">COSENZA</option>
+                    <option value="CR">CREMONA</option>
+                    <option value="KR">CROTONE</option>
+                    <option value="CN">CUNEO</option>
+                    <option value="EN">ENNA</option>
+                    <option value="FM">FERMO</option>
+                    <option value="FE">FERRARA</option>
+                    <option value="FI">FIRENZE</option>
+                    <option value="FG">FOGGIA</option>
+                    <option value="FC">FORLI’-CESENA</option>
+                    <option value="FR">FROSINONE</option>
+                    <option value="GE">GENOVA</option>
+                    <option value="GO">GORIZIA</option>
+                    <option value="GR">GROSSETO</option>
+                    <option value="IM">IMPERIA</option>
+                    <option value="IS">ISERNIA</option>
+                    <option value="SP">LA SPEZIA</option>
+                    <option value="AQ">L’AQUILA</option>
+                    <option value="LT">LATINA</option>
+                    <option value="LE">LECCE</option>
+                    <option value="LC">LECCO</option>
+                    <option value="LI">LIVORNO</option>
+                    <option value="LO">LODI</option>
+                    <option value="LU">LUCCA</option>
+                    <option value="MC">MACERATA</option>
+                    <option value="MN">MANTOVA</option>
+                    <option value="MS">MASSA-CARRARA</option>
+                    <option value="MT">MATERA</option>
+                    <option value="VS"> MEDIO CAMPIDANO</option>
+                    <option value="ME">MESSINA</option>
+                    <option value="MI">MILANO</option>
+                    <option value="MO">MODENA</option>
+                    <option value="MB">MONZA E DELLA BRIANZA</option>
+                    <option value="NA">NAPOLI</option>
+                    <option value="NO">NOVARA</option>
+                    <option value="NU">NUORO</option>
+                    <option value="OG">OGLIASTRA</option>
+                    <option value="OT">OLBIA-TEMPIO</option>
+                    <option value="OR">ORISTANO</option>
+                    <option value="PD">PADOVA</option>
+                    <option value="PA">PALERMO</option>
+                    <option value="PR">PARMA</option>
+                    <option value="PV">PAVIA</option>
+                    <option value="PG">PERUGIA</option>
+                    <option value="PU">PESARO E URBINO</option>
+                    <option value="PE">PESCARA</option>
+                    <option value="PC">PIACENZA</option>
+                    <option value="PI">PISA</option>
+                    <option value="PT">PISTOIA</option>
+                    <option value="PN">PORDENONE</option>
+                    <option value="PZ">POTENZA</option>
+                    <option value="PO">PRATO</option>
+                    <option value="RG">RAGUSA</option>
+                    <option value="RA">RAVENNA</option>
+                    <option value="RC">REGGIO DI CALABRIA</option>
+                    <option value="RE">REGGIO NELL’EMILIA</option>
+                    <option value="RI">RIETI</option>
+                    <option value="RN">RIMINI</option>
+                    <option value="RM">ROMA</option>
+                    <option value="RO">ROVIGO</option>
+                    <option value="SA">SALERNO</option>
+                    <option value="SS">SASSARI</option>
+                    <option value="SV">SAVONA</option>
+                    <option value="SI">SIENA</option>
+                    <option value="SR">SIRACUSA</option>
+                    <option value="SO">SONDRIO</option>
+                    <option value="TA">TARANTO</option>
+                    <option value="TE">TERAMO</option>
+                    <option value="TR">TERNI</option>
+                    <option value="TO">TORINO</option>
+                    <option value="TP">TRAPANI</option>
+                    <option value="TN">TRENTO</option>
+                    <option value="TV">TREVISO</option>
+                    <option value="TS">TRIESTE</option>
+                    <option value="UD">UDINE</option>
+                    <option value="VA">VARESE</option>
+                    <option value="VE">VENEZIA</option>
+                    <option value="VB">VERBANO-CUSIO-OSSOLA</option>
+                    <option value="VC">VERCELLI</option>
+                    <option value="VR">VERONA</option>
+                    <option value="VV">VIBO VALENTIA</option>
+                    <option value="VI">VICENZA</option>
+                    <option value="VT">VITERBO</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="text" placeholder="Indirizzo" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="text" placeholder="CAP" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="text" placeholder="Città" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="tel" placeholder="Telephone" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="tel" placeholder="Mobile" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="tel" placeholder="Fax" />
+                </div>
+                <div class="form-group col-sm-12">
+                  <div class="input-group">
+                    <div class="custom-file">
+                      <input
+                        type="file"
+                        class="custom-file-input"
+                        id="customFileStore"
+                        onchange="getFileName(this)"
+                      />
+                      <label class="custom-file-label" for="customFileStore"
+                        >Upload Store Logo</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group col-sm-12">
+                    <button>Add Store</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add store End -->
+    <!-- Add store -->
+    <div
+      class="modal fade"
+      id="addUser"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="addUser"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="addUserTitle">
+              Add new User
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="text-center align-self-center addUser">
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <input type="text" placeholder="User First Name" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="text" placeholder="User Last Name" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="email" placeholder="User Email" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="password" placeholder="Password" />
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="text" placeholder="Codice" />
+                </div>
+
+                <div class="form-group col-sm-6">
+                  <select
+                    required=""
+                    name="userRole"
+                    id="userRole"
+                    class="form-control input-sm empty"
+                  >
+                    <option value="" selected="selected">User Role</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Colaborator">Colaborator</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-12">
+                  <div class="input-group">
+                    <div class="custom-file">
+                      <input
+                        type="file"
+                        class="custom-file-input"
+                        id="customFileUser"
+                        onchange="getFileName(this)"
+                      />
+                      <label class="custom-file-label" for="customFileUser"
+                        >Upload Profile Picture</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group col-sm-12">
+                    <button>Add user</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add iser End -->
+    <!-- modal -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script> -->
+    <script>
+      window.jQuery ||
+        document.write('<script src="./scripts/libs/jquery.min.js"><\/script>');
+    </script>
+    <script src="./scripts/libs/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./scripts/libs/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

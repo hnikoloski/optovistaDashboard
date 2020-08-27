@@ -1,0 +1,32 @@
+$green:#276462;
+$hoverGreen:#034c4a;
+$lightGreen:#6CAAA8;
+$black:#2B2B2B;
+$lightGray: #EDEDED;
+$darkGray: #676767;
+
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
+$font:'Istok Web',
+sans-serif;
+
+@font-face {
+    font-family: 'IstokWeb';
+    src: local('IstokWeb'), url(../../../assets/fonts/IstokWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'IstokWebBold';
+    src: local('IstokWebBold'), url(../../../assets/fonts/IstokWeb-Bold.ttf);
+}
+
+
+@mixin regularFont() {
+    font-family: 'IstokWeb', sans-serif;
+    font-weight: 400;
+}
+
+@mixin boldFont() {
+    font-family: 'IstokWebBold', sans-serif;
+    font-weight: 700;
+}

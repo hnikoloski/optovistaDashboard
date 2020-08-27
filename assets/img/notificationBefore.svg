@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="12.5" viewBox="0 0 25 12.5">
+  <g id="Group_3" data-name="Group 3" transform="translate(-1000.5 -559)">
+    <g id="Group_1" data-name="Group 1">
+      <g id="Group_2" data-name="Group 2">
+        <g id="Path_2" data-name="Path 2" transform="translate(1002 559)" fill="#fff">
+          <path d="M 20.86338233947754 11.5 L 1.136618375778198 11.5 L 11 0.7399472594261169 L 20.86338233947754 11.5 Z" stroke="none"/>
+          <path d="M 11 1.479883193969727 L 2.273225784301758 11 L 19.72677230834961 11 L 11 1.479883193969727 M 11 0 L 22 12 L 0 12 L 11 0 Z" stroke="none" fill="#707070"/>
+        </g>
+        <path id="Path_1" data-name="Path 1" d="M0,0H23" transform="translate(1001.5 570.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

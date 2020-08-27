@@ -1,0 +1,29 @@
+@import "../helpers/colors.scss";
+
+.sw.sw-justified>.nav>li {
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    // left: 0;
+    width: 15%;
+    height: 5px;
+    background-color: #EDEDED;
+    border-radius: 3px;
+    z-index: 1;
+  }
+
+  &.done {
+    &::after {
+      background-color: $green;
+    }
+  }
+
+
+  &:last-of-type {
+    &::after {
+      opacity: 0;
+      display: none;
+    }
+  }
+}

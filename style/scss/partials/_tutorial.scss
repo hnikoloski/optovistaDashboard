@@ -1,0 +1,89 @@
+@import "../helpers/colors.scss";
+
+.content-wrapper {
+  // padding: 10% 2%;
+  padding-top: 92px;
+  width: 100%;
+  background-color: #f7f7f7;
+
+  main {
+
+
+    //   &::before {
+    //    content: " ";
+    //    opacity: 0;
+    //    background: url('../../../assets/img/icons/star.svg');
+    //    @include bg-props(cover, center, no-repeat);
+    //    position: absolute;
+    //    bottom: 5px;
+    //    left: -36px;
+    //    height: 30px;
+    //    width: 30px;
+    //  }
+
+
+
+    section {
+      &.tutorial {
+        .pageTitle {
+          color: $black;
+          font-size: 2.6rem;
+          @include boldFont();
+          margin-left: 0;
+          position: relative;
+          margin-bottom: 30px;
+
+          i {
+            &.ci {
+              width: 40px;
+              height: 30px;
+              display: inline-block;
+              padding: 0;
+              vertical-align: text-top;
+              margin-right: 15px;
+
+              &.ci-computer-green {
+                background: url(../../../assets/img/icons/computer-green.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+        }
+
+        .modal-card {
+          height: 300px;
+
+          &::before {
+            background: unset;
+          }
+
+
+        }
+
+        .loader {
+          margin: 0 auto;
+          border: 8px solid $lightGray;
+          /* Light grey */
+          border-top: 8px solid $green;
+          /* Blue */
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          animation: spin 1.5s linear infinite;
+        }
+
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+}

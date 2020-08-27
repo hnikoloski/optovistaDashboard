@@ -1,0 +1,46 @@
+@import "scss/helpers/helpers";
+@import "scss/helpers/cicons";
+@import "scss/partials/_header";
+@import "scss/partials/_sidebar";
+@import "scss/partials/_body";
+@import "scss/partials/_homeSlider";
+@import "scss/partials/_modals";
+@import "scss/partials/_footer";
+
+@import "scss/partials/_ordini";
+@import "scss/partials/_preferiti";
+@import "scss/partials/_login";
+@import "scss/partials/_tutorial";
+@import "scss/partials/_catalog";
+@import "scss/partials/smartWizard";
+
+* {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 10px;
+    -webkit-transition: right 0.5s ease;
+    -moz-transition: right 0.5s ease;
+    -ms-transition: right 0.5s ease;
+    -o-transition: right 0.5s ease;
+    transition: right 0.5s ease;
+}
+
+html {
+    background: #F7F7F7;
+
+}
+
+.grayBg {
+    background-color: #F7F7F7;
+}
+
+.clear {
+    padding: 0;
+    margin: 0;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    background: #EDEDED;
+    margin: 3rem 0;
+}

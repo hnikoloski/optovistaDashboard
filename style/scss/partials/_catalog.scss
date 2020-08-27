@@ -1,0 +1,104 @@
+@import "../helpers/colors.scss";
+
+.content-wrapper {
+  main {
+    section {
+      &.catalog {
+        .pageTitle {
+          color: $black;
+          font-size: 2.6rem;
+          @include boldFont();
+          margin-left: 0;
+          position: relative;
+          margin-bottom: 30px;
+
+          i {
+            &.ci {
+              width: 40px;
+              height: 30px;
+              display: inline-block;
+              padding: 0;
+              vertical-align: text-top;
+              margin-right: 15px;
+
+              &.ci-book-green {
+                background: url(../../../assets/img/icons/book-green.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+        }
+
+        .modal-card {
+          min-height: 350px;
+
+          &::before {
+            background: unset;
+          }
+
+          .imgWrapper {
+            max-height: 400px;
+
+            img {
+              height: auto;
+              width: auto;
+            }
+          }
+
+          h4 {
+            text-align: center;
+            font-size: 1.6rem;
+            @include boldFont();
+            line-height: 2.5;
+            color: $black;
+            margin: 0;
+            text-transform: uppercase;
+          }
+
+          p {
+            font-size: 1.4rem;
+            color: $black;
+            margin-bottom: 20px;
+          }
+
+          a {
+            color: #fff;
+            background: $green;
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            padding: 10px 35px;
+            font-size: 1.3rem;
+            @include boldFont();
+            text-transform: uppercase;
+          }
+
+        }
+
+        .loader {
+          margin: 0 auto;
+          border: 8px solid $lightGray;
+          /* Light grey */
+          border-top: 8px solid $green;
+          /* Blue */
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          animation: spin 1.5s linear infinite;
+        }
+
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+}

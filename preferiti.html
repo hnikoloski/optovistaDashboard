@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Dashboard Template · Optovista</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- <link rel="stylesheet" href="./style/bootstrap/bootstrap.css" /> -->
+
+    <!-- Custom styles for this template -->
+    <link href="./style/dashboard.css" rel="stylesheet" />
+    <link href="./style/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar sticky-top flex-md-nowrap shadow topNav">
+      <button
+        class="navbar-toggler position-absolute d-md-none collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="col-sm-4">
+        <span class="search-icon"></span>
+        <!-- <img src="./assets/img/icons/search.svg" alt="Search Icon" /> -->
+
+        <input
+          class="search-form form-control"
+          type="text"
+          aria-label="Search"
+        />
+      </div>
+      <div class="col-sm-4 logo">
+        <img src="./assets/img/icons/UNO.svg" alt="uno logo" />
+      </div>
+      <div class="col-sm-4 top-menu">
+        <ul class="navbar-nav">
+          <li
+            class="nav-item fav-modal-open"
+            data-toggle="modal"
+            data-target="#fav-modal"
+          >
+            <a href="#!">
+              <img
+                src="./assets/img/icons/star.svg"
+                alt="Star Icon"
+                class="icons"
+              />
+            </a>
+          </li>
+          <li class="nav-item hasNotification">
+            <a href="#!">
+              <img
+                src="./assets/img/icons/bell.svg"
+                alt="Notification Icon"
+                class="icons"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <p>Mario Rossi</p>
+          </li>
+          <li class="nav-item">
+            <div class="profile-picture-wrapper">
+              <img
+                src="./assets/img/profilePicture.png"
+                alt="Profile Picture"
+              />
+            </div>
+          </li>
+        </ul>
+        <div class="notificationWindow">
+          <div class="singleNotification">
+            <h3>OFFERTA SPECIALE</h3>
+            <p>20% di sconto su tutte le lenti progressive</p>
+          </div>
+          <hr />
+          <div class="singleNotification">
+            <h3>OFFERTA SPECIALE</h3>
+            <p>20% di sconto su tutte le lenti progressive</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid content-wrapper">
+      <div class="row">
+        <nav
+          id="sidebarMenu"
+          class="col-md-3 col-lg-2 d-md-block sidebar collapse"
+        >
+          <div class="sidebar-sticky pt-3 text-center">
+            <div class="logoWrapper">
+              <img src="./assets/img/logo.png" alt="Logo" />
+              <h3>Ottica Milano</h3>
+            </div>
+            <ul class="nav flex-column">
+              <li class="nav-item side-item current">
+                <a class="nav-link" href="#">
+                  <div class="ci ci-home"></div>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item side-item">
+                <a class="nav-link" href="#">
+                  <div class="ci ci-cart"></div>
+
+                  Orders
+                </a>
+              </li>
+              <li class="nav-item side-item">
+                <a class="nav-link" href="#">
+                  <div class="ci ci-computer"></div>
+
+                  Products
+                </a>
+              </li>
+              <li class="nav-item side-item">
+                <a class="nav-link" href="#">
+                  <div class="ci ci-book"></div>
+
+                  Customers
+                </a>
+              </li>
+              <li class="nav-item side-item">
+                <a class="nav-link" href="#">
+                  <div class="ci ci-discount"></div>
+
+                  Reports
+                </a>
+              </li>
+            </ul>
+
+            <div class="sidebar-info">
+              <h4>Eurobonus:</h4>
+              <div class="bonus-amount"><h5>3446</h5></div>
+              <div class="side-delimiter"></div>
+              <div class="bottomLogo">
+                <img src="./assets/img/bottomLogo.svg" alt="bottom logo" />
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <main role="main grayBg" class="col">
+          <h2 class="pageTitle">PREFERITI</h2>
+          <section class="container-fluid preferiti">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="modal-card">
+                  <a href="#!" class="removeFavCard"></a>
+                  <img src="./assets/img/modalCardLogo.svg" />
+                  <h4>Sole e sport</h4>
+                  <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+                  <button>ORDINA PRODOTTO</button>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="modal-card">
+                  <a href="#!" class="removeFavCard"></a>
+                  <img src="./assets/img/modalCardLogo.svg" />
+                  <h4>Sole e sport</h4>
+                  <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+                  <button>ORDINA PRODOTTO</button>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="modal-card">
+                  <a href="#!" class="removeFavCard"></a>
+                  <img src="./assets/img/modalCardLogo.svg" />
+                  <h4>Sole e sport</h4>
+                  <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+                  <button>ORDINA PRODOTTO</button>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="modal-card">
+                  <a href="#!" class="removeFavCard"></a>
+                  <img src="./assets/img/modalCardLogo.svg" />
+                  <h4>Sole e sport</h4>
+                  <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+                  <button>ORDINA PRODOTTO</button>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="modal-card">
+                  <a href="#!" class="removeFavCard"></a>
+                  <img src="./assets/img/modalCardLogo.svg" />
+                  <h4>Sole e sport</h4>
+                  <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+                  <button>ORDINA PRODOTTO</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <footer>
+            <div class="row">
+              <div class="col-sm-6 copyrights">
+                <p>
+                  Optovista SpA | Via Commenda 1/2 - 40012 Calderara di Reno
+                  (BO) | tel. 051 727012 P.IVA: 01579131200 | C.F. | REGISTRO
+                  IMPRESE BO: 01579131200
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <ul class="footer-menu">
+                  <li class="footer-menu-item"><a href="#!"> Privacy</a></li>
+                  <li class="footer-menu-item"><a href="#!"> Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-2">
+                <div class="logo-wrapper">
+                  <img src="./assets/img/icons/UNO.svg" alt="Footer Logo" />
+                </div>
+              </div>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <!-- Modals Start -->
+    <!-- Favourites Modal -->
+    <div
+      class="modal right fade"
+      id="fav-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="fav-modalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/img/closeModal.svg" alt="Close modal" />
+            </button>
+            <ul>
+              <li class="modalIcon">
+                <img src="./assets/img/icons/star-white.svg" alt="" />
+              </li>
+              <li class="modalTitle">
+                <h4>
+                  Preferiti
+                </h4>
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal-body">
+            <div class="modal-card">
+              <a href="#!" class="removeFavCard"
+                ><img
+                  src="./assets/img/icons/star-white.svg"
+                  alt="White star icon"
+              /></a>
+              <img src="./assets/img/modalCardLogo.svg" />
+              <h4>Sole e sport</h4>
+              <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+              <button>ORDINA PRODOTTO</button>
+            </div>
+            <div class="modal-card">
+              <a href="#!" class="removeFavCard"
+                ><img
+                  src="./assets/img/icons/star-white.svg"
+                  alt="White star icon"
+              /></a>
+              <img src="./assets/img/modalCardLogo.svg" />
+              <h4>Sole e sport</h4>
+              <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+              <button>ORDINA PRODOTTO</button>
+            </div>
+            <div class="modal-card">
+              <a href="#!" class="removeFavCard"
+                ><img
+                  src="./assets/img/icons/star-white.svg"
+                  alt="White star icon"
+              /></a>
+              <img src="./assets/img/modalCardLogo.svg" />
+              <h4>Sole e sport</h4>
+              <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+              <button>ORDINA PRODOTTO</button>
+            </div>
+            <div class="modal-card">
+              <a href="#!" class="removeFavCard"
+                ><img
+                  src="./assets/img/icons/star-white.svg"
+                  alt="White star icon"
+              /></a>
+              <img src="./assets/img/modalCardLogo.svg" />
+              <h4>Sole e sport</h4>
+              <a href="#!" class="cardLink">Scopri di più sul prodotto</a>
+              <button>ORDINA PRODOTTO</button>
+            </div>
+            <div class="text-center">
+              <a href="#!" class="seeMore">Vedi Tutti</a>
+            </div>
+          </div>
+        </div>
+        <!-- modal-content -->
+      </div>
+      <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script> -->
+    <script>
+      window.jQuery ||
+        document.write('<script src="./scripts/libs/jquery.min.js"><\/script>');
+    </script>
+    <script src="./scripts/libs/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./scripts/libs/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
+    <script src="./scripts/dashboard.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

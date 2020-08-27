@@ -1,0 +1,81 @@
+@import "../helpers/colors.scss";
+
+
+footer {
+    background: #fff;
+    margin: 38px 0 0 -1%;
+    padding: 30px;
+    height: 92px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 500;
+    border-top: 1px solid $lightGray;
+
+    .copyrights {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #676767;
+            height: 40px;
+            width: 1px;
+        }
+
+
+
+        p {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.4rem;
+            color: #2B2B2B;
+            line-height: 1.3;
+        }
+    }
+
+    .footer-menu {
+        .footer-menu-item {
+            display: inline;
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-right: 12px;
+
+            a {
+                font-size: 2rem;
+                color: #2B2B2B;
+                font-weight: bold;
+            }
+
+            &::after {
+                content: "|";
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                font-size: 20px;
+
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+
+
+        }
+    }
+
+    .logo-wrapper {
+        height: 30px;
+        width: 90px;
+        float: right;
+
+        img {
+            width: 100%;
+        }
+    }
+}
