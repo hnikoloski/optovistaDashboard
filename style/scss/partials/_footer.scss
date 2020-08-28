@@ -79,3 +79,12 @@ footer {
         }
     }
 }
+
+@media(max-width: 1024px){
+    footer{
+        .logo-wrapper{
+            float: left;
+            margin-left: -20%;
+        }
+    }
+}

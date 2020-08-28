@@ -343,3 +343,23 @@ nav {
         }
     }
 }
+@media (max-width: 1440px) {
+    .notificationWindow{
+        left: 11%;
+    }
+    .modal{
+
+    &.right{
+        .modal-body{
+            overflow-y: scroll;
+        }
+    }
+} 
+    
+}
+@media (max-width: 1024px){
+    .notificationWindow{
+        left: unset;
+        right: 19%;
+    }
+}

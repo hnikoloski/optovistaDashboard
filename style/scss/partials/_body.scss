@@ -397,3 +397,83 @@
     }
   }
 }
+@media (max-width: 1440px) {
+.content-wrapper{
+  main{
+    padding: 30px 20px 10% 10%;
+ 
+    section{
+      &.analyitics{
+        .cardsContainer{
+          .container-card{
+            &.rightContainer{
+              .companyTable{
+                table{
+                  tr{
+                    td{
+                      font-size: 1.2rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+}
+@media(max-width: 1024px){
+  .content-wrapper{
+    main{
+      .dashboard-message{
+        .rightSection{
+          p{
+            font-size: 1.2rem;
+            span{
+              font-size: 1.4rem;
+              &.discountAmount{
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+
+
+      section{
+        &.analyitics{
+          .companyInfoContainer .companyInfo .buttons-wrapper{
+            right: 0;
+            a{
+              display: block;
+            }
+          }
+          .cardsContainer{
+            .container-card{
+              &.rightContainer{
+                .companyTable{
+                  table{
+                    th{
+                      font-size: 1.2rem;
+                      padding: 0 5px;
+                    }
+                    tr{
+                      td{
+                        font-size: 1rem;
+                      padding: 0;
+
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
