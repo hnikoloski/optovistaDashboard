@@ -477,3 +477,33 @@
     }
   }
 }
+
+@media(max-width: 425px){
+  .content-wrapper{
+    main{
+
+      section{
+        &.analyitics {
+          img{
+            width: 50px;
+          }
+          // .cardsContainer {
+          //   .container-card{
+          //     .middleContainer {
+          //       .companyTable{
+          //         .col-sm-3{
+          //           width: 40%;
+          //         }
+          //       }
+          //     }
+
+          //   }
+
+          // }
+        }
+
+      }
+    } 
+
+  } 
+}

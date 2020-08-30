@@ -357,6 +357,37 @@ nav#sidebarMenu ul li.active a::after, nav#sidebarMenu ul li.current a::after {
     left: 74%;
   }
 }
+@media (max-width: 768px) {
+  nav#sidebarMenu .logoWrapper {
+    width: 50px;
+  }
+  nav#sidebarMenu .logoWrapper img {
+    width: 100%;
+  }
+  nav#sidebarMenu .sidebar-info h4 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  nav#sidebarMenu .sidebar-info .bonus-amount {
+    width: 100%;
+  }
+  nav#sidebarMenu .sidebar-info .bonus-amount h5 {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 1.6rem;
+  }
+  nav#sidebarMenu .sidebar-info .side-delimiter {
+    display: none;
+  }
+  nav#sidebarMenu .sidebar-info .bottomLogo {
+    width: 100%;
+    margin-top: 50px;
+  }
+  nav#sidebarMenu .sidebar-info .bottomLogo img {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
 @font-face {
   font-family: "IstokWeb";
   src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
@@ -733,6 +764,11 @@ nav#sidebarMenu ul li.active a::after, nav#sidebarMenu ul li.current a::after {
   .content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table tr td {
     font-size: 1rem;
     padding: 0;
+  }
+}
+@media (max-width: 425px) {
+  .content-wrapper main section.analyitics img {
+    width: 50px;
   }
 }
 @font-face {
