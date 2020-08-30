@@ -41,5 +41,8 @@ $(document).ready(function () {
 
   $(".sw-btn-next").on("click", function () {
     $(".step-wrapper").has(".done").addClass("done");
+    if(window.location.hash == '#step-7'){
+      $('.content-wrapper section.ordini-flow .miniCart .miniCartInfo').slideDown();
+    }
   });
 });

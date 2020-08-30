@@ -1139,6 +1139,120 @@ nav .top-menu .userInfo ul li a:hover {
   opacity: 0;
 }
 
+#promoCart .modal-dialog {
+  max-width: 50%;
+}
+#promoCart .modal-content {
+  border-radius: 20px;
+  padding: 30px 10px;
+}
+#promoCart .modal-header {
+  display: block;
+  text-align: center;
+  border-bottom: none;
+}
+#promoCart .modal-header h5,
+#promoCart .modal-header h4,
+#promoCart .modal-header p {
+  display: block;
+}
+#promoCart .modal-header h5 {
+  color: #276462;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  clear: right;
+}
+#promoCart .modal-header h4 {
+  color: #2B2B2B;
+  font-size: 3rem;
+  margin-bottom: 22px;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+}
+#promoCart .modal-header p {
+  font-size: 2.6rem;
+  color: #2B2B2B;
+  margin-bottom: 35px;
+}
+#promoCart .modal-body .choice-container {
+  padding: 35px;
+  border: 3px solid #ededed;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+#promoCart .modal-body .choice-container.active {
+  border: 3px solid #276462;
+}
+#promoCart .modal-body .choice-container h4 {
+  color: #276462;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+#promoCart .modal-body .choice-container .img-wrapper {
+  width: 190px;
+  margin: 0 auto;
+}
+#promoCart .modal-body .choice-container .img-wrapper img {
+  width: 100%;
+}
+#promoCart .modal-body .choice-container h5 {
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  color: #2B2B2B;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+#promoCart .modal-body .choice-container a {
+  color: #276462;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+#promoCart .modal-body .btns {
+  width: 100%;
+  margin-top: 30px;
+}
+#promoCart .modal-body .btns h5 {
+  font-size: 1.4rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+#promoCart .modal-body .btns a {
+  padding: 15px 25px;
+  border-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+#promoCart .modal-body .btns .fr {
+  text-align: right;
+}
+#promoCart .modal-body .btns .fr h5 {
+  color: #676767;
+}
+#promoCart .modal-body .btns .fr a {
+  background: #676767;
+}
+#promoCart .modal-body .btns .fl {
+  text-align: left;
+}
+#promoCart .modal-body .btns .fl h5 {
+  color: #276462;
+}
+#promoCart .modal-body .btns .fl a {
+  background: #276462;
+}
+
 @media (max-width: 1440px) {
   .notificationWindow {
     left: 11%;
@@ -1483,6 +1597,130 @@ footer .logo-wrapper img {
 .content-wrapper section.ordini-flow .tab-pane#step-2 .selection-wrapper h4 {
   color: #2B2B2B;
 }
+.content-wrapper section.ordini-flow .tab-pane#step-3 .row {
+  padding: 5% 0;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-3 .selection-wrapper {
+  border: 3px solid #EDEDED;
+  width: 95%;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 5%;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-3 .selection-wrapper.active, .content-wrapper section.ordini-flow .tab-pane#step-3 .selection-wrapper:hover {
+  border-color: #276462;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-3 .selection-wrapper h4 {
+  color: #2B2B2B;
+  line-height: 1.5;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-4 .selection-wrapper {
+  border: 3px solid #EDEDED;
+  width: 95%;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 5%;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-4 .selection-wrapper.active, .content-wrapper section.ordini-flow .tab-pane#step-4 .selection-wrapper:hover {
+  border-color: #276462;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-4 .selection-wrapper h4 {
+  color: #2B2B2B;
+  line-height: 1.5;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-4 .addSectionWrapper {
+  border: 3px solid #EDEDED;
+  width: 95%;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 5%;
+  margin: 20px 0;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-4 .addSectionWrapper p {
+  font-size: 1.6rem;
+  color: #2B2B2B;
+  margin-bottom: 0;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 p, .content-wrapper section.ordini-flow .tab-pane#step-6 p {
+  color: #276462;
+  font-size: 2.6rem;
+  min-height: 200px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-7 h3 {
+  color: #2B2B2B;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-7 ul {
+  padding-left: 0;
+  margin-top: 35px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-7 ul li {
+  display: inline;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-7 ul li a {
+  border-radius: 25px;
+  background: #276462;
+  color: #fff;
+  padding: 5px 20px;
+  font-size: 2.6rem;
+  margin-left: 0;
+  text-decoration: none;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-7 ul li:nth-child(2) {
+  position: relative;
+  margin-left: 20px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-7 ul li:nth-child(2) input[type=checkbox] {
+  box-shadow: none;
+  border-radius: 6px;
+  border: 3px solid #EDEDED;
+  width: 15px;
+  height: 15px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-7 ul li:nth-child(2) label {
+  font-size: 1.5rem;
+  color: #676767;
+  display: inline;
+  margin-left: 15px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-7 ul li:nth-child(2) label span {
+  color: #276462;
+  font-size: 1.6rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-7 form input {
+  border-radius: 20px;
+  border: 1px solid #EDEDED;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 1.6rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-7 form input:focus {
+  outline: none;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-7 form button {
+  background: #276462;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-left: 20px;
+  border: 1px solid #276462;
+  color: #fff;
+}
 .content-wrapper section.ordini-flow .flowSection {
   padding: 25px 0;
   border-bottom: 1px solid #EDEDED;
@@ -1576,6 +1814,47 @@ footer .logo-wrapper img {
   font-size: 2.6rem;
   font-family: "IstokWeb", sans-serif;
   font-weight: 400;
+}
+.content-wrapper section.ordini-flow .miniCart .miniCartInfo {
+  display: none;
+  padding: 0 5% 5%;
+}
+.content-wrapper section.ordini-flow .miniCart .miniCartInfo .top-bar {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 50px;
+  background: #A3CBC9;
+}
+.content-wrapper section.ordini-flow .miniCart .miniCartInfo .top-bar h5 {
+  font-size: 1.6rem;
+  padding: 15px 0;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+.content-wrapper section.ordini-flow .miniCart .miniCartInfo ul {
+  margin: 0;
+  padding: 0;
+}
+.content-wrapper section.ordini-flow .miniCart .miniCartInfo ul li {
+  list-style-type: none;
+  border: 3px solid #276462;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.content-wrapper section.ordini-flow .miniCart .miniCartInfo ul li:hover {
+  background: #276462;
+}
+.content-wrapper section.ordini-flow .miniCart .miniCartInfo ul li:hover a {
+  color: #fff !important;
+  text-decoration: none;
+}
+.content-wrapper section.ordini-flow .miniCart .miniCartInfo ul li a {
+  color: #276462;
+  font-size: 1.5rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
 }
 
 .fl {

@@ -93,3 +93,15 @@ function getFileName(elm) {
     $(label).css("border", "2px solid #276462");
   }
 }
+
+$('.choice-container').on('click',function(){
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+  } else{
+
+    $(this).addClass('active');
+  }
+})
+$('.notInterested').on('click',function(){
+  $('#promoCart').modal('toggle');
+})
