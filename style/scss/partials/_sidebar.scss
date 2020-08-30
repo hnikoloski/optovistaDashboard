@@ -254,8 +254,23 @@ nav {
   }
 }
 @media (max-width: 768px) {
+
   nav {
+    
     &#sidebarMenu {
+      ul li.active a,
+      ul li.current a
+      {
+        background-position: left;
+        &::before{
+          top: -4%;
+    left: 65%;
+        }
+        &::after{
+          bottom: -6%;
+          left: 65%;
+        }
+      }
       .logoWrapper {
         width: 50px;
         img {

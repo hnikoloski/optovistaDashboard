@@ -358,6 +358,20 @@ nav#sidebarMenu ul li.active a::after, nav#sidebarMenu ul li.current a::after {
   }
 }
 @media (max-width: 768px) {
+  nav#sidebarMenu ul li.active a,
+nav#sidebarMenu ul li.current a {
+    background-position: left;
+  }
+  nav#sidebarMenu ul li.active a::before,
+nav#sidebarMenu ul li.current a::before {
+    top: -4%;
+    left: 65%;
+  }
+  nav#sidebarMenu ul li.active a::after,
+nav#sidebarMenu ul li.current a::after {
+    bottom: -6%;
+    left: 65%;
+  }
   nav#sidebarMenu .logoWrapper {
     width: 50px;
   }
