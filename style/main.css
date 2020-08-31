@@ -1936,6 +1936,19 @@ footer .logo-wrapper img {
 .content-wrapper section.ordini-flow .miniCart .container-card .cart {
   margin: 0 auto;
 }
+.content-wrapper section.ordini-flow .miniCart .container-card .cart table {
+  width: 100%;
+  margin: 1rem 0;
+}
+.content-wrapper section.ordini-flow .miniCart .container-card .cart table tr {
+  line-height: 2;
+}
+.content-wrapper section.ordini-flow .miniCart .container-card .cart table tr td {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+}
 .content-wrapper section.ordini-flow .miniCart .container-card .cart .col-sm-6 {
   height: 35px;
   padding: 0;

@@ -589,7 +589,18 @@
 
           .cart {
             margin: 0 auto;
-
+            table{
+              width: 100%;
+              margin: 1rem 0;
+              tr{
+                line-height: 2;
+                td{
+                  text-transform: uppercase;
+    font-size: 1.3rem;
+    @include boldFont();
+                }
+              }
+            }
             .col-sm-6 {
               height: 35px;
               padding: 0;

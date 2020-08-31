@@ -105,3 +105,16 @@ $(".choice-container").on("click", function () {
 $(".notInterested").on("click", function () {
   $("#promoCart").modal("toggle");
 });
+function checkCartTotal(){
+
+  let cartTotal = [];
+  
+  $('.singleOrderPrice').each(function(index, obj)
+  {
+    cartTotal.push(parseInt($(this).text()));
+  });
+  let cartTotalSum = cartTotal.reduce(function(a, b){
+    return a + b;
+  }, 0);
+  $('#totalPrice').text(cartTotalSum);
+}
