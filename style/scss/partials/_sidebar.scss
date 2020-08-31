@@ -117,7 +117,7 @@ nav {
       }
 
       .side-delimiter {
-        height: 100px;
+        height: 80px;
         width: 2px;
         background: #fff;
         margin: 25px auto;
@@ -126,7 +126,7 @@ nav {
       .bottomLogo {
         background-color: #fff;
         height: 40px;
-        width: 105px;
+        width: 100%;
         margin: 0 auto;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -186,6 +186,8 @@ nav {
           &.active,
           &.current {
             a {
+              height: 90px;
+
               &::before {
                 content: " ";
                 background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;

@@ -283,7 +283,7 @@ nav#sidebarMenu .sidebar-info h5 {
   line-height: 1;
 }
 nav#sidebarMenu .sidebar-info .side-delimiter {
-  height: 100px;
+  height: 80px;
   width: 2px;
   background: #fff;
   margin: 25px auto;
@@ -291,7 +291,7 @@ nav#sidebarMenu .sidebar-info .side-delimiter {
 nav#sidebarMenu .sidebar-info .bottomLogo {
   background-color: #fff;
   height: 40px;
-  width: 105px;
+  width: 100%;
   margin: 0 auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -325,6 +325,9 @@ nav#sidebarMenu ul li.active a::after, nav#sidebarMenu ul li.current a::after {
 }
 
 @media (max-width: 1440px) {
+  nav#sidebarMenu ul li.active a, nav#sidebarMenu ul li.current a {
+    height: 90px;
+  }
   nav#sidebarMenu ul li.active a::before, nav#sidebarMenu ul li.current a::before {
     content: " ";
     background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
