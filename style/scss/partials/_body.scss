@@ -397,21 +397,23 @@
     }
   }
 }
+
 @media (max-width: 1440px) {
-.content-wrapper{
-  main{
-    padding: 30px 20px 10% 10%;
- 
-    section{
-      &.analyitics{
-        .cardsContainer{
-          .container-card{
-            &.rightContainer{
-              .companyTable{
-                table{
-                  tr{
-                    td{
-                      font-size: 1.2rem;
+  .content-wrapper {
+    main {
+      padding: 30px 20px 10% 10%;
+
+      section {
+        &.analyitics {
+          .cardsContainer {
+            .container-card {
+              &.rightContainer {
+                .companyTable {
+                  table {
+                    tr {
+                      td {
+                        font-size: 1.2rem;
+                      }
                     }
                   }
                 }
@@ -422,19 +424,21 @@
       }
     }
   }
-}
 
 }
-@media(max-width: 1024px){
-  .content-wrapper{
-    main{
-      .dashboard-message{
-        .rightSection{
-          p{
+
+@media(max-width: 1024px) {
+  .content-wrapper {
+    main {
+      .dashboard-message {
+        .rightSection {
+          p {
             font-size: 1.2rem;
-            span{
+
+            span {
               font-size: 1.4rem;
-              &.discountAmount{
+
+              &.discountAmount {
                 font-size: 1.5rem;
               }
             }
@@ -443,27 +447,30 @@
       }
 
 
-      section{
-        &.analyitics{
-          .companyInfoContainer .companyInfo .buttons-wrapper{
+      section {
+        &.analyitics {
+          .companyInfoContainer .companyInfo .buttons-wrapper {
             right: 0;
-            a{
+
+            a {
               display: block;
             }
           }
-          .cardsContainer{
-            .container-card{
-              &.rightContainer{
-                .companyTable{
-                  table{
-                    th{
+
+          .cardsContainer {
+            .container-card {
+              &.rightContainer {
+                .companyTable {
+                  table {
+                    th {
                       font-size: 1.2rem;
                       padding: 0 5px;
                     }
-                    tr{
-                      td{
+
+                    tr {
+                      td {
                         font-size: 1rem;
-                      padding: 0;
+                        padding: 0;
 
                       }
                     }
@@ -478,32 +485,18 @@
   }
 }
 
-@media(max-width: 425px){
-  .content-wrapper{
-    main{
+@media(max-width: 768px) {
+  .content-wrapper {
+    main {
 
-      section{
-        &.analyitics {
-          img{
-            width: 50px;
-          }
-          // .cardsContainer {
-          //   .container-card{
-          //     .middleContainer {
-          //       .companyTable{
-          //         .col-sm-3{
-          //           width: 40%;
-          //         }
-          //       }
-          //     }
+      padding: 30px 20px 25% 10%;
 
-          //   }
-
-          // }
+      .dashboard-message {
+        .leftSection {
+          background: url("../../../assets/img/icons/badge.png");
         }
-
       }
-    } 
+    }
 
-  } 
+  }
 }

@@ -42,6 +42,7 @@ nav {
         }
 
         &.active {
+
           a:hover::before,
           a:hover::after {
             opacity: 1;
@@ -69,8 +70,7 @@ nav {
 
             &::after {
               content: " ";
-              background: url(../../../assets/img/sideBarHoverBottom.svg)
-                no-repeat;
+              background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
               bottom: -21px;
             }
 
@@ -140,6 +140,7 @@ nav {
   &#sidebarMenu {
     ul {
       li {
+
         &.active,
         &.current {
           a {
@@ -150,10 +151,8 @@ nav {
             color: #276462;
 
             .ci {
-              filter: invert(58%) sepia(46%) saturate(492%) hue-rotate(129deg)
-                brightness(92%) contrast(93%);
-              -ms-filter: invert(58%) sepia(46%) saturate(492%)
-                hue-rotate(129deg) brightness(92%) contrast(93%);
+              filter: invert(58%) sepia(46%) saturate(492%) hue-rotate(129deg) brightness(92%) contrast(93%);
+              -ms-filter: invert(58%) sepia(46%) saturate(492%) hue-rotate(129deg) brightness(92%) contrast(93%);
             }
 
             &::before {
@@ -166,8 +165,7 @@ nav {
 
             &::after {
               content: " ";
-              background: url(../../../assets/img/sideBarHoverBottom.svg)
-                no-repeat;
+              background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
               bottom: -20%;
               left: 83%;
               opacity: 1;
@@ -178,18 +176,19 @@ nav {
     }
   }
 }
+
 @media (max-width: 1440px) {
   nav {
     &#sidebarMenu {
       ul {
         li {
+
           &.active,
           &.current {
             a {
               &::before {
                 content: " ";
-                background: url(../../../assets/img/sideBarHoverTop.svg)
-                  no-repeat;
+                background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
                 top: -8%;
                 left: 82%;
                 width: 25px;
@@ -198,8 +197,7 @@ nav {
 
               &::after {
                 content: " ";
-                background: url(../../../assets/img/sideBarHoverBottom.svg)
-                  no-repeat;
+                background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
                 bottom: -8%;
                 left: 81%;
                 opacity: 1;
@@ -213,18 +211,22 @@ nav {
     }
   }
 }
+
 @media (max-width: 1024px) {
   nav {
     &#sidebarMenu {
       .sidebar-sticky {
         overflow-y: scroll;
       }
+
       .logoWrapper {
         height: auto;
+
         img {
           width: 50px;
         }
       }
+
       ul {
         li {
           a {
@@ -233,15 +235,18 @@ nav {
               width: 25px;
             }
           }
+
           &.active,
           &.current {
             a {
               background-size: cover;
               background-position: 14px 61%;
+
               &::before {
                 top: -4%;
                 left: 74%;
               }
+
               &::after {
                 bottom: -6%;
                 left: 74%;
@@ -253,56 +258,110 @@ nav {
     }
   }
 }
+
 @media (max-width: 768px) {
 
   nav {
-    
+
     &#sidebarMenu {
-      ul li.active a,
-      ul li.current a
-      {
-        background-position: left;
-        &::before{
-          top: -4%;
-    left: 65%;
+      ul {
+        li {
+          a {
+            font-size: 1rem;
+          }
         }
-        &::after{
+      }
+
+      ul li.active a,
+      ul li.current a {
+        background-position: left;
+
+        &::before {
+          top: -4%;
+          left: 65%;
+        }
+
+        &::after {
           bottom: -6%;
           left: 65%;
         }
       }
+
       .logoWrapper {
         width: 50px;
+
         img {
           width: 100%;
         }
-      }
-    .sidebar-info {
-      h4 {
-        font-size: 1.2rem;
-        text-align: center;
-      }
-      .bonus-amount {
-        width: 100%;
-        h5 {
-          width: 100%;
-          padding: 15px 10px;
-          font-size: 1.6rem;
+
+        h3 {
+          line-height: 1.3;
         }
-       
       }
-      .side-delimiter{
-        display: none;
-      }
-      .bottomLogo{
-        width: 100%;
-        margin-top: 50px;
-        img{
+
+      .sidebar-info {
+        position: absolute;
+        bottom: 0;
+
+        h4 {
+          font-size: 1.2rem;
+          text-align: center;
+        }
+
+        .bonus-amount {
           width: 100%;
-    padding-top: 10px;
+
+          h5 {
+            width: 100%;
+            padding: 15px 10px;
+            font-size: 1.6rem;
+          }
+
+        }
+
+        .side-delimiter {
+          display: none;
+        }
+
+        .bottomLogo {
+          width: 100%;
+          margin-top: 50px;
+
+          img {
+            width: 100%;
+            padding-top: 10px;
+          }
         }
       }
     }
   }
 }
+
+@media (min-width: 2560px) {
+
+  nav#sidebarMenu ul li.active a,
+  nav#sidebarMenu ul li.current a {
+    background: url(../../../assets/img/icons/hoverSideBar.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 65px 50%;
+    color: #276462;
+  }
+
+  nav#sidebarMenu ul li.active a::before,
+  nav#sidebarMenu ul li.current a::before {
+    content: " ";
+    background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
+    opacity: 1;
+    top: -26%;
+    left: 88%;
+  }
+
+  nav#sidebarMenu ul li.active a::after,
+  nav#sidebarMenu ul li.current a::after {
+    content: " ";
+    background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
+    bottom: -26%;
+    left: 87%;
+  }
 }

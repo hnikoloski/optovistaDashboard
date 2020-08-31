@@ -13,6 +13,7 @@ nav {
     top: 0;
     padding: 1%;
     text-align: center;
+
     .search-icon {
       background: url("../../../assets/img/icons/search.svg");
       height: 23px;
@@ -25,9 +26,11 @@ nav {
       top: 22%;
       z-index: 2;
     }
+
     .search-form:focus .search-icon:hover {
       display: none;
     }
+
     .search-form {
       position: relative;
       top: 0;
@@ -45,26 +48,30 @@ nav {
       }
     }
   }
+
   .top-menu {
+
     // height: 50px;
     ul {
       float: right;
       display: block;
       height: 40px;
+
       li {
         display: inline;
         line-height: 40px;
         position: relative;
         top: 0;
         left: 0;
+
         &.hasNotification {
           position: relative;
           top: 0;
           left: 0;
+
           &::after {
             content: " ";
-            background: url("../../../assets/img/icons/notificationBadge.svg")
-              center center no-repeat;
+            background: url("../../../assets/img/icons/notificationBadge.svg") center center no-repeat;
             background-size: cover;
             height: 16px;
             width: 16px;
@@ -73,6 +80,7 @@ nav {
             right: 30%;
           }
         }
+
         a {
           &:hover {
             text-decoration: none;
@@ -81,10 +89,12 @@ nav {
 
         img {
           padding: 0 20px;
+
           &.icons {
             border-right: 2px solid #707070;
           }
         }
+
         p {
           display: inline;
           padding: 0 15px;
@@ -92,11 +102,13 @@ nav {
           @include boldFont();
           vertical-align: middle;
         }
+
         .profile-picture-wrapper {
           display: inline-block;
           width: 52px;
           height: 52px;
           border-radius: 100%;
+
           img {
             object-fit: cover;
             object-position: center center;
@@ -108,22 +120,48 @@ nav {
     }
   }
 }
+
 @media (max-width: 1024px) {
   nav {
     .top-menu {
       ul {
-          float: unset;
+        float: unset;
+
         li {
-            img{
-                padding: 0 10px;
-            }
+          img {
+            padding: 0 10px;
+          }
+
           .profile-picture-wrapper {
-              width: 35px;
-              height: auto;
+            width: 35px;
+            height: auto;
+
             img {
-                width: 100%;
-                height: auto;
+              width: 100%;
+              height: auto;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    .top-menu {
+      text-align: left;
+      padding: 0;
+
+      ul {
+        li {
+          img.icons {
+            height: auto;
+            width: 40px;
+          }
+
+          p {
+            padding: 0 5px;
           }
         }
       }

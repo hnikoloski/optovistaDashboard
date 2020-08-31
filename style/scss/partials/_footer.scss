@@ -80,11 +80,27 @@ footer {
     }
 }
 
-@media(max-width: 1024px){
-    footer{
-        .logo-wrapper{
+@media(max-width: 1024px) {
+    footer {
+        .logo-wrapper {
             float: left;
             margin-left: -20%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    footer {
+        margin-top: 20px;
+
+        .copyrights {
+            flex: 0 0 40%;
+            max-width: 40%;
+
+            p {
+                font-size: 1rem;
+            }
         }
     }
 }

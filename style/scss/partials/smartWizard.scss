@@ -27,3 +27,11 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+
+  .sw.sw-justified>.nav>li,
+  .sw.sw-justified>.nav .nav-link {
+    width: 85px;
+  }
+}

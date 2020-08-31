@@ -82,6 +82,7 @@ $(".singleProductPrice").each(function (i) {
 });
 $(".selection-wrapper").on("click", function () {
   $(this).toggleClass("active");
+  $("#promoCart").modal("show");
 });
 
 function getFileName(elm) {
@@ -94,14 +95,13 @@ function getFileName(elm) {
   }
 }
 
-$('.choice-container').on('click',function(){
-  if($(this).hasClass('active')){
-    $(this).removeClass('active');
-  } else{
-
-    $(this).addClass('active');
+$(".choice-container").on("click", function () {
+  if ($(this).hasClass("active")) {
+    $(this).removeClass("active");
+  } else {
+    $(this).addClass("active");
   }
-})
-$('.notInterested').on('click',function(){
-  $('#promoCart').modal('toggle');
-})
+});
+$(".notInterested").on("click", function () {
+  $("#promoCart").modal("toggle");
+});
