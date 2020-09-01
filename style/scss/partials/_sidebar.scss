@@ -214,6 +214,20 @@ nav {
   }
 }
 
+@media(max-width: 1366px) {
+  nav {
+    &#sidebarMenu {
+      ul {
+        li {
+          a {
+            height: 75px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   nav {
     &#sidebarMenu {

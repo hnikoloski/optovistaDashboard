@@ -47,7 +47,7 @@ $(document).ready(function () {
         ".content-wrapper section.ordini-flow .miniCart .miniCartInfo"
       ).slideDown();
       $(".floatingCart").hide();
-      $(".showMobile").show();
+      // $(".showMobile").show();
     }
   });
 });

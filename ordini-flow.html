@@ -160,7 +160,7 @@
         <main role="main grayBg" class="col">
           <section class="container-fluid ordini-flow">
             <div class="row">
-              <div class="col-lg-9">
+              <div class="col-lg-9 responsive-100">
                 <div class="container-card">
                   <h5>NUOVO ORDINE</h5>
 
@@ -575,16 +575,31 @@
                           <h4>Seleziona prodotto</h4>
                           <div class="row flowSection">
                             <div class="col-sm-4">
-                              <div class="selection-wrapper">
+                              <label class="selection-wrapper">
                                 <h4>BRST28</h4>
                                 <p>3/4 DISCO 28 Minerale</p>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-product"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                             <div class="col-sm-4">
-                              <div class="selection-wrapper">
+                              <label class="selection-wrapper">
                                 <h4>BRST28</h4>
                                 <p>3/4 DISCO 28 Minerale</p>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-product"
+                                  class="productSelection"
+                                />
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                           </div>
                         </div>
@@ -595,14 +610,30 @@
                           <hr class="b2" />
                           <div class="row">
                             <div class="col-sm-3 largeTablet">
-                              <div class="selection-wrapper">
+                              <label class="selection-wrapper">
                                 <h4>SENZA TRATTAMENTO</h4>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-treatment"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                             <div class="col-sm-3 largeTablet">
-                              <div class="selection-wrapper">
+                              <label class="selection-wrapper">
                                 <h4>SENZA TRATTAMENTO</h4>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-treatment"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                           </div>
                           <hr class="b2" />
@@ -615,108 +646,557 @@
                           <h4>SELEZIONA PRODOTTO</h4>
                           <div class="row">
                             <div class="col-sm-3 largeTablet">
-                              <div class="selection-wrapper">
-                                <h4>SENZA TRATTAMENTO</h4>
-                              </div>
+                              <label
+                                class="selection-wrapper"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#additionalProductInfo1"
+                                aria-expanded="false"
+                                aria-controls="additionalProductInfo1"
+                              >
+                                <h4>NESSUNA COLORAZIONE</h4>
+
+                                <input
+                                  type="radio"
+                                  name="select-product-treatment"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                             <div class="col-sm-3 largeTablet">
-                              <div class="selection-wrapper">
-                                <h4>SENZA TRATTAMENTO</h4>
-                              </div>
+                              <label
+                                class="selection-wrapper"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#additionalProductInfo2"
+                                aria-expanded="false"
+                                aria-controls="additionalProductInfo2"
+                              >
+                                <h4>COLORAZIONE MINERALE</h4>
+
+                                <input
+                                  type="radio"
+                                  name="select-product-treatment"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                           </div>
-                          <div class="row addSelection">
+                          <div
+                            class="row addSelection"
+                            class="collapse"
+                            id="additionalProductInfo1"
+                          >
                             <div class="col-sm-3">
-                              <div class="addSectionWrapper">
+                              <label class="addSectionWrapper">
                                 <p>Brown 15%</p>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-color"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                             <div class="col-sm-3">
-                              <div class="addSectionWrapper">
+                              <label class="addSectionWrapper">
                                 <p>Brown 15%</p>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-color"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                             <div class="col-sm-3">
-                              <div class="addSectionWrapper">
+                              <label class="addSectionWrapper">
                                 <p>Brown 15%</p>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-color"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                             <div class="col-sm-3">
-                              <div class="addSectionWrapper">
+                              <label class="addSectionWrapper">
                                 <p>Brown 15%</p>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-color"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                             <div class="col-sm-3">
-                              <div class="addSectionWrapper">
+                              <label class="addSectionWrapper">
                                 <p>Brown 15%</p>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-color"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div
+                            class="row addSelection"
+                            class="collapse"
+                            id="additionalProductInfo2"
+                          >
+                            <div class="col-sm-3">
+                              <label class="addSectionWrapper">
+                                <p>Brown 15%</p>
+
+                                <input
+                                  type="radio"
+                                  name="select-color"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                             <div class="col-sm-3">
-                              <div class="addSectionWrapper">
+                              <label class="addSectionWrapper">
                                 <p>Brown 15%</p>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-color"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                             <div class="col-sm-3">
-                              <div class="addSectionWrapper">
+                              <label class="addSectionWrapper">
                                 <p>Brown 15%</p>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-color"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                             <div class="col-sm-3">
-                              <div class="addSectionWrapper">
+                              <label class="addSectionWrapper">
                                 <p>Brown 15%</p>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-color"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                             <div class="col-sm-3">
-                              <div class="addSectionWrapper">
+                              <label class="addSectionWrapper">
                                 <p>Brown 15%</p>
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="addSectionWrapper">
-                                <p>Brown 15%</p>
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="addSectionWrapper">
-                                <p>Brown 15%</p>
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="addSectionWrapper">
-                                <p>Brown 15%</p>
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="addSectionWrapper">
-                                <p>Brown 15%</p>
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="addSectionWrapper">
-                                <p>Brown 15%</p>
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="addSectionWrapper">
-                                <p>Brown 15%</p>
-                              </div>
+
+                                <input
+                                  type="radio"
+                                  name="select-color"
+                                  class="productSelection"
+                                />
+
+                                <span class="checkmark"></span>
+                              </label>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div id="step-5" class="tab-pane" role="tabpanel">
-                        <div id="step-4" class="tab-pane" role="tabpanel">
-                          <div class="container-fluid">
-                            <h4 class="light">
-                              COMPILA IL MODULO MOI/PRC (se richiesto)
-                            </h4>
-                            <hr class="b2" />
-                            <p>
-                              Non è richiesta la compilazione del modulo MOI per
-                              il prodotto selezionato.
-                            </p>
-                            <hr class="b2" />
+                        <div class="container-fluid">
+                          <h4 class="light">
+                            COMPILA IL MODULO MOI/PRC (se richiesto)
+                          </h4>
+                          <hr class="b2" />
+                          <!-- <p>
+                            Non è richiesta la compilazione del modulo MOI per
+                            il prodotto selezionato.
+                          </p> -->
+                          <div class="row mb-5">
+                            <div class="col-sm-7 mb-5">
+                              <form action="" id="moduloForm">
+                                <div class="cChecks row">
+                                  <div class="col-lg-4 mb-4 responsive-50">
+                                    <div class="form-check">
+                                      <label
+                                        class="selection-wrapper"
+                                        for="Metallo"
+                                      >
+                                        <h4>Metallo</h4>
+
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="modulo"
+                                          id="Metallo"
+                                          value="Metallo"
+                                        />
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 mb-4 responsive-50">
+                                    <div class="form-check">
+                                      <label
+                                        class="selection-wrapper"
+                                        for="Glasant"
+                                      >
+                                        <h4>Glasant</h4>
+
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="modulo"
+                                          id="Glasant"
+                                          value="Glasant"
+                                        />
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 mb-4 responsive-50">
+                                    <div class="form-check">
+                                      <label
+                                        class="selection-wrapper"
+                                        for="NylorAcciaio"
+                                      >
+                                        <h4>Nylor Acciaio</h4>
+
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="modulo"
+                                          id="NylorAcciaio"
+                                          value="NylorAcciaio"
+                                        />
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 mb-4 responsive-50">
+                                    <div class="form-check">
+                                      <label
+                                        class="selection-wrapper"
+                                        for="Acetato"
+                                      >
+                                        <h4>Acetato</h4>
+
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="modulo"
+                                          id="Acetato"
+                                          value="Acetato"
+                                        />
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 mb-4 responsive-50">
+                                    <div class="form-check">
+                                      <label
+                                        class="selection-wrapper"
+                                        for="Nylor"
+                                      >
+                                        <h4>Nylor (FILO)</h4>
+
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="modulo"
+                                          id="Nylor"
+                                          value="Nylor"
+                                        />
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <ul>
+                                  <li>
+                                    <label for="spessore"
+                                      >Spessore minimo al bordo:
+                                    </label>
+                                    <input type="text" name="spessore" />
+                                  </li>
+                                  <li>
+                                    <label for="angolo">
+                                      Angolo pantoscopico:
+                                    </label>
+                                    <input type="text" name="angolo" />
+                                    <a
+                                      href="#!"
+                                      target="_blank"
+                                      class="moreInfo"
+                                      title="More Info"
+                                    >
+                                      <i class="fas fa-info-circle"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <label for="distanza"
+                                      >Distanza apice corneale-lente:</label
+                                    >
+                                    <input type="text" name="distanza" />
+                                  </li>
+                                  <li>
+                                    <label for="angolo">
+                                      Angolo pantoscopico:
+                                    </label>
+                                    <input type="text" name="angolo" />
+                                  </li>
+                                </ul>
+                              </form>
+                            </div>
+                            <div class="col-sm-5">
+                              <div class="img-wrapper graph">
+                                <img src="./assets/img/graph.jpg" alt="" />
+                              </div>
+                            </div>
                           </div>
+                          <div class="row mt-5">
+                            <div class="col-lg-5 responsive-100">
+                              <div class="img-wrapper">
+                                <img src="./assets/img/graph2.jpg" alt="" />
+                              </div>
+                            </div>
+                            <div class="col-lg-3 inputs responsive-100">
+                              <label for="larghezza">
+                                Larghezza <span class="greenCircle">A</span>
+                                <input type="text" name="larghezza" />
+                              </label>
+                              <label for="altezza">
+                                Altezza <span class="greenCircle">B</span>
+                                <input type="text" name="altezza" />
+                              </label>
+                              <label for="ponte">
+                                Ponte <span class="greenCircle">C</span>
+                                <input type="text" name="altezza" />
+                              </label>
+                            </div>
+                            <div class="col-lg-3 responsive-100">
+                              <div class="table-responsive-lg">
+                                <table class="table inputTable">
+                                  <tbody>
+                                    <tr>
+                                      <td></td>
+                                      <td>
+                                        Semidistanza centri ottici
+                                        <span class="greenCircle">D</span>
+                                      </td>
+                                      <td>
+                                        Altezza centri ottici
+                                        <span class="greenCircle">E</span>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>O.D.</td>
+                                      <td>
+                                        <input type="text" class="tableInput" />
+                                      </td>
+                                      <td>
+                                        <input type="text" class="tableInput" />
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>O.S.</td>
+                                      <td>
+                                        <input type="text" class="tableInput" />
+                                      </td>
+                                      <td>
+                                        <input type="text" class="tableInput" />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <hr />
+                          <div class="row">
+                            <div class="col-sm-3 cWidth">
+                              <label class="selection-wrapper" for="lense1">
+                                <input
+                                  class="form-check-input radioImg"
+                                  type="radio"
+                                  name="imgCheck"
+                                  id="lense1"
+                                  value="lense1"
+                                />
+                                <a href="#!" class="imgCheckBox">
+                                  <img src="./assets/img/lenses/1.jpg" alt="" />
+                                </a>
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                            <div class="col-sm-3 cWidth">
+                              <label class="selection-wrapper" for="lense2">
+                                <input
+                                  class="form-check-input radioImg"
+                                  type="radio"
+                                  name="imgCheck"
+                                  id="lense2"
+                                  value="lense2"
+                                />
+                                <a href="#!" class="imgCheckBox">
+                                  <img src="./assets/img/lenses/2.jpg" alt="" />
+                                </a>
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                            <div class="col-sm-3 cWidth">
+                              <label class="selection-wrapper" for="lense3">
+                                <input
+                                  class="form-check-input radioImg"
+                                  type="radio"
+                                  name="imgCheck"
+                                  id="lense3"
+                                  value="lense3"
+                                />
+                                <a href="#!" class="imgCheckBox">
+                                  <img src="./assets/img/lenses/3.jpg" alt="" />
+                                </a>
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                            <div class="col-sm-3 cWidth">
+                              <label class="selection-wrapper" for="lense4">
+                                <input
+                                  class="form-check-input radioImg"
+                                  type="radio"
+                                  name="imgCheck"
+                                  id="lense4"
+                                  value="lense4"
+                                />
+                                <a href="#!" class="imgCheckBox">
+                                  <img src="./assets/img/lenses/4.jpg" alt="" />
+                                </a>
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                            <div class="col-sm-3 cWidth">
+                              <label class="selection-wrapper" for="lense5">
+                                <input
+                                  class="form-check-input radioImg"
+                                  type="radio"
+                                  name="imgCheck"
+                                  id="lense5"
+                                  value="lense5"
+                                />
+                                <a href="#!" class="imgCheckBox">
+                                  <img src="./assets/img/lenses/5.jpg" alt="" />
+                                </a>
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                            <div class="col-sm-3 cWidth">
+                              <label class="selection-wrapper" for="lense6">
+                                <input
+                                  class="form-check-input radioImg"
+                                  type="radio"
+                                  name="imgCheck"
+                                  id="lense6"
+                                  value="lense6"
+                                />
+                                <a href="#!" class="imgCheckBox">
+                                  <img src="./assets/img/lenses/6.jpg" alt="" />
+                                </a>
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                            <div class="col-sm-3 cWidth">
+                              <label class="selection-wrapper" for="lense7">
+                                <input
+                                  class="form-check-input radioImg"
+                                  type="radio"
+                                  name="imgCheck"
+                                  id="lense7"
+                                  value="lense7"
+                                />
+                                <a href="#!" class="imgCheckBox">
+                                  <img src="./assets/img/lenses/7.jpg" alt="" />
+                                </a>
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                            <div class="col-sm-3 cWidth">
+                              <label class="selection-wrapper" for="lense8">
+                                <input
+                                  class="form-check-input radioImg"
+                                  type="radio"
+                                  name="imgCheck"
+                                  id="lense8"
+                                  value="lense8"
+                                />
+                                <a href="#!" class="imgCheckBox">
+                                  <img src="./assets/img/lenses/8.jpg" alt="" />
+                                </a>
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                            <div class="col-sm-3 cWidth">
+                              <label class="selection-wrapper" for="lense9">
+                                <input
+                                  class="form-check-input radioImg"
+                                  type="radio"
+                                  name="imgCheck"
+                                  id="lense9"
+                                  value="lense9"
+                                />
+                                <a href="#!" class="imgCheckBox">
+                                  <img src="./assets/img/lenses/9.jpg" alt="" />
+                                </a>
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                            <div class="col-sm-3 cWidth">
+                              <label class="selection-wrapper" for="lense10">
+                                <input
+                                  class="form-check-input radioImg"
+                                  type="radio"
+                                  name="imgCheck"
+                                  id="lense10"
+                                  value="lense10"
+                                />
+                                <a href="#!" class="imgCheckBox">
+                                  <img
+                                    src="./assets/img/lenses/10.jpg"
+                                    alt=""
+                                  />
+                                </a>
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <hr class="b2" />
                         </div>
                       </div>
                       <div id="step-6" class="tab-pane" role="tabpanel">
@@ -845,37 +1325,33 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 miniCart">
+              <div class="col-lg-3 miniCart responsive-100">
                 <div class="container-card">
-
                   <h5>IL TUO PREZZO DEDICATO</h5>
                   <hr />
                   <div class="container-fluid">
                     <div class="row cart">
                       <table>
                         <tr class="singleOrder">
-                          <td class="text-left">
-                            3/4 DISCO 25 MINERALE
-                          </td>
+                          <td class="text-left">3/4 DISCO 25 MINERALE</td>
                           <td class="text-right">
                             <span class="singleOrderPrice">100</span> &euro;
-                          </td>  
+                          </td>
                         </tr>
                         <tr class="singleOrder">
-                          <td class="text-left">
-                            3/4 DISCO 25 MINERALE
-                          </td>
+                          <td class="text-left">3/4 DISCO 25 MINERALE</td>
                           <td class="text-right">
                             <span class="singleOrderPrice">100</span> &euro;
-                          </td>  
+                          </td>
                         </tr>
                       </table>
-                     
                     </div>
                     <div class="row priceBox">
                       <div class="col-sm-6"><h5>Totale</h5></div>
                       <div class="col-sm-6">
-                        <h5><span id="totalPrice">0.00</span>&#8364;</h5>
+                        <h5 class="text-right">
+                          <span id="totalPrice">0.00</span>&#8364;
+                        </h5>
                       </div>
                     </div>
                   </div>

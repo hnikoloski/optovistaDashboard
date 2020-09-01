@@ -44,3 +44,20 @@ html {
     background: #EDEDED;
     margin: 3rem 0;
 }
+
+span {
+    // &.greenCircle {
+    //     background: #276462;
+    //     font-size: 1.3rem;
+    //     color: #fff;
+    //     border-radius: 100%;
+    //     width: 30px;
+    //     height: 30px;
+    //     padding: 5px 10px;
+    // }
+}
+
+.cWidth {
+    max-width: 20%;
+    flex: 0 0 20%;
+}

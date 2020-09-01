@@ -346,6 +346,11 @@ nav#sidebarMenu ul li.active a::after, nav#sidebarMenu ul li.current a::after {
     height: 25px;
   }
 }
+@media (max-width: 1366px) {
+  nav#sidebarMenu ul li a {
+    height: 75px;
+  }
+}
 @media (max-width: 1024px) {
   nav#sidebarMenu .sidebar-sticky {
     overflow-y: scroll;
@@ -1458,7 +1463,6 @@ footer .footer-menu .footer-menu-item:last-child::after {
 footer .logo-wrapper {
   height: 30px;
   width: 90px;
-  float: right;
 }
 footer .logo-wrapper img {
   width: 100%;
@@ -1700,6 +1704,9 @@ footer .logo-wrapper img {
   margin-left: 25px;
   text-decoration: underline;
 }
+.content-wrapper section.ordini-flow .tab-pane input[type=radio].productSelection {
+  display: none;
+}
 .content-wrapper section.ordini-flow .tab-pane#step-2 .flowSection .tab-pane h4 {
   display: block;
 }
@@ -1727,11 +1734,20 @@ footer .logo-wrapper img {
   cursor: pointer;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
-.content-wrapper section.ordini-flow .tab-pane#step-2 .selection-wrapper.active, .content-wrapper section.ordini-flow .tab-pane#step-2 .selection-wrapper:hover {
+.content-wrapper section.ordini-flow .tab-pane#step-2 .selection-wrapper.active {
   border-color: #276462;
 }
 .content-wrapper section.ordini-flow .tab-pane#step-2 .selection-wrapper h4 {
   color: #2B2B2B;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-2 .selection-wrapper p {
+  color: #5C5C5C;
+  font-size: 1.6rem;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-2 .selection-wrapper input[type=radio] {
+  visibility: hidden;
 }
 .content-wrapper section.ordini-flow .tab-pane#step-3 .row {
   padding: 5% 0;
@@ -1778,6 +1794,9 @@ footer .logo-wrapper img {
   padding: 5%;
   margin: 20px 0;
 }
+.content-wrapper section.ordini-flow .tab-pane#step-4 .addSectionWrapper.active {
+  border-color: #276462;
+}
 .content-wrapper section.ordini-flow .tab-pane#step-4 .addSectionWrapper p {
   font-size: 1.6rem;
   color: #2B2B2B;
@@ -1787,6 +1806,112 @@ footer .logo-wrapper img {
   color: #276462;
   font-size: 2.6rem;
   min-height: 200px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 {
+  padding: 0 5%;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 label {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 label span {
+  color: #276462;
+  font-size: 2rem;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 input {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  color: #5C5C5C;
+  font-family: "IstokWebBold", sans-serif;
+  font-weight: 700;
+  border: 1px solid #EDEDED;
+  margin-bottom: 20px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 input:focus {
+  outline: none;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 .img-wrapper {
+  width: 100%;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 .img-wrapper img {
+  width: 100%;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 .graph {
+  width: 100%;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 .graph img {
+  width: 100%;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm .cChecks label {
+  border: 3px solid #EDEDED;
+  width: 95%;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 5%;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm .cChecks label h4 {
+  font-size: 1rem;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm .cChecks label.active {
+  border-color: #276462;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm .cChecks .col-lg-3 {
+  margin-bottom: 10px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm .cChecks input[type=radio] {
+  position: relative;
+  box-shadow: none;
+  opacity: 0;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm ul li a {
+  margin-left: 0;
+  position: relative;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm ul li a i {
+  position: absolute;
+  left: 10px;
+  font-size: 2rem;
+  color: #276462;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm ul li label {
+  min-width: 250px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 table.inputTable tr td {
+  font-size: 1.4rem;
+  border-top: none;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 table.inputTable tr td input {
+  margin-bottom: 0;
+  width: 150px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 table.inputTable tr td span {
+  color: #276462;
+  font-size: 2rem;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 .cWidth .selection-wrapper {
+  padding: 5px;
+  border: 3px solid #EDEDED;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 .cWidth .selection-wrapper.active {
+  border: 3px solid #276462;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 .imgCheckBox {
+  margin-left: 0;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 .imgCheckBox img {
+  width: 100%;
+}
+.content-wrapper section.ordini-flow .tab-pane#step-5 input[name=imgCheck] {
+  opacity: 0;
 }
 .content-wrapper section.ordini-flow .tab-pane#step-7 .showMobile {
   display: none;
@@ -2207,6 +2332,26 @@ footer .logo-wrapper img {
   float: right;
 }
 
+@media (max-width: 1440px) {
+  .content-wrapper section.ordini-flow .tab-pane#step-5 table.inputTable tr td input {
+    width: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .responsive-100 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .responsive-50 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .content-wrapper section.ordini-flow .tab-pane#step-5 label {
+    display: block;
+  }
+}
 @font-face {
   font-family: "IstokWeb";
   src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
@@ -2608,6 +2753,11 @@ html {
   height: 2px;
   background: #EDEDED;
   margin: 3rem 0;
+}
+
+.cWidth {
+  max-width: 20%;
+  flex: 0 0 20%;
 }
 
 /*# sourceMappingURL=main.css.map */

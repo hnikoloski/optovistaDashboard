@@ -1,4 +1,14 @@
 $(function () {
+  $(".imgCheckBox").on("click", function (e) {
+    e.preventDefault();
+    $(this).prev().prop("checked", true);
+
+    $(".selection-wrapper.active").removeClass("active");
+    $(this).parent().addClass("active");
+
+    console.log($(this).prev());
+  });
+
   $(".side-item").on("mouseover", function () {
     $(".side-item").removeClass("active");
     $(this).addClass("active");
@@ -80,11 +90,21 @@ $("#copyValues").on("click", function (e) {
 $(".singleProductPrice").each(function (i) {
   $(this).addClass("productNum-" + (i + 1));
 });
-$(".selection-wrapper").on("click", function () {
-  $(this).toggleClass("active");
-  $("#promoCart").modal("show");
-});
-
+function radioCheck(radioName, parentClass, modalShow) {
+  $(`input:radio[name='${radioName}']`).on("change", function () {
+    $("." + parentClass).removeClass("active"); //if any previous selecton is done remove it
+    $(this)
+      .parent("." + parentClass)
+      .addClass("active");
+    if (modalShow == true) {
+      $("#promoCart").modal("show");
+    }
+  });
+}
+// $('input:radio[name="imgCheck"').on("change", function () {
+//   $(".selection-wrapper").removeClass("active");
+//   $(this).parent(".selection-wrapper").addClass("active");
+// });
 function getFileName(elm) {
   var fn = $(elm).val();
   var filename = fn.replace(/C:\\fakepath\\/i, "");
@@ -105,16 +125,22 @@ $(".choice-container").on("click", function () {
 $(".notInterested").on("click", function () {
   $("#promoCart").modal("toggle");
 });
-function checkCartTotal(){
-
+function checkCartTotal() {
   let cartTotal = [];
-  
-  $('.singleOrderPrice').each(function(index, obj)
-  {
+
+  $(".singleOrderPrice").each(function (index, obj) {
     cartTotal.push(parseInt($(this).text()));
   });
-  let cartTotalSum = cartTotal.reduce(function(a, b){
+  let cartTotalSum = cartTotal.reduce(function (a, b) {
     return a + b;
   }, 0);
-  $('#totalPrice').text(cartTotalSum);
+  $("#totalPrice").text(cartTotalSum);
 }
+
+// Radio Buttons Check
+radioCheck("select-product", "selection-wrapper", true);
+radioCheck("select-treatment", "selection-wrapper", false);
+radioCheck("select-product-treatment", "selection-wrapper", false);
+radioCheck("select-color", "addSectionWrapper", false);
+radioCheck("modulo", "selection-wrapper", false);
+// radioCheck("imgCheck", "selection-wrapper", false);
