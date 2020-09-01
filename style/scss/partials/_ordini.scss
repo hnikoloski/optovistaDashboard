@@ -397,6 +397,12 @@
         }
 
         &#step-4 {
+
+          #additionalProductInfo1,
+          #additionalProductInfo2 {
+            display: none;
+          }
+
           .selection-wrapper {
             border: 3px solid $lightGray;
             width: 95%;
@@ -416,6 +422,7 @@
               line-height: 1.5;
             }
           }
+
 
           .addSectionWrapper {
             border: 3px solid $lightGray;

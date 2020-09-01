@@ -136,7 +136,11 @@ function checkCartTotal() {
   }, 0);
   $("#totalPrice").text(cartTotalSum);
 }
-
+$(".largeTablet .selection-wrapper").on("click", function () {
+  $("#additionalProductInfo1").slideDown();
+  let heightNeeded = $("#additionalProductInfo1").height();
+  $("#step-4").css("height", `+=` + heightNeeded);
+});
 // Radio Buttons Check
 radioCheck("select-product", "selection-wrapper", true);
 radioCheck("select-treatment", "selection-wrapper", false);

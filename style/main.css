@@ -1768,6 +1768,10 @@ footer .logo-wrapper img {
   color: #2B2B2B;
   line-height: 1.5;
 }
+.content-wrapper section.ordini-flow .tab-pane#step-4 #additionalProductInfo1,
+.content-wrapper section.ordini-flow .tab-pane#step-4 #additionalProductInfo2 {
+  display: none;
+}
 .content-wrapper section.ordini-flow .tab-pane#step-4 .selection-wrapper {
   border: 3px solid #EDEDED;
   width: 95%;
