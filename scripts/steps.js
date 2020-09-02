@@ -48,6 +48,7 @@ $(document).ready(function () {
       ).slideDown();
       $(".floatingCart").hide();
       // $(".showMobile").show();
+      $(".toolbar.toolbar-bottom").hide();
     }
   });
 });

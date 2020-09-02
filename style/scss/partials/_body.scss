@@ -371,7 +371,7 @@
 
             &.rightContainer {
               background: url('../../../assets/img/ctaBg.jpg') no-repeat center center;
-              background-size: cover;
+              background-size: contain;
               position: relative;
               top: 0;
               left: 0;
@@ -384,7 +384,8 @@
                 padding: 15px 30px;
                 position: absolute;
                 top: 70%;
-                left: 42%;
+                left: 50%;
+                transform: translate(-50%, 0);
                 font-size: 1.3rem;
 
                 &:hover {

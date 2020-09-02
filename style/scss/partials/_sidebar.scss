@@ -60,7 +60,7 @@ nav {
           // animation-name: slide;
 
           &:hover {
-            background: url("../../../assets/img/icons/hoverSideBar.svg");
+            // background: url("../../../assets/img/icons/hoverSideBar.svg");
             background-repeat: no-repeat;
             background-size: 95%;
             background-position: 20px 61%;
@@ -68,17 +68,17 @@ nav {
             // border-bottom-left-radius: 100px;
             color: $green;
 
-            &::after {
-              content: " ";
-              background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
-              bottom: -21px;
-            }
+            // &::after {
+            //   content: " ";
+            //   background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
+            //   bottom: -21px;
+            // }
 
-            &::before {
-              content: " ";
-              background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
-              top: -29px;
-            }
+            // &::before {
+            //   content: " ";
+            //   background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
+            //   top: -29px;
+            // }
           }
 
           &::before,
@@ -144,32 +144,35 @@ nav {
         &.active,
         &.current {
           a {
-            background: url(../../../assets/img/icons/hoverSideBar.svg);
-            background-repeat: no-repeat;
-            background-size: 95%;
-            background-position: 20px 61%;
+            // background: url(../../../assets/img/icons/hoverSideBar.svg);
+            // background-repeat: no-repeat;
+            // background-size: 95%;
+            // background-position: 20px 61%;
             color: #276462;
 
             .ci {
               filter: invert(58%) sepia(46%) saturate(492%) hue-rotate(129deg) brightness(92%) contrast(93%);
               -ms-filter: invert(58%) sepia(46%) saturate(492%) hue-rotate(129deg) brightness(92%) contrast(93%);
+              padding-top: 75px;
+            }
+
+            p {
+              position: relative;
             }
 
             &::before {
               content: " ";
-              background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
+              background: url(../../../assets/img/hoverFull.svg);
+              background-size: 80%;
+              background-repeat: no-repeat;
+              background-position: 136% 50%;
+              bottom: 0;
               opacity: 1;
-              top: -27%;
-              left: 83%;
+              width: 100%;
+              height: 100%;
             }
 
-            &::after {
-              content: " ";
-              background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
-              bottom: -20%;
-              left: 83%;
-              opacity: 1;
-            }
+            &::after {}
           }
         }
       }
@@ -186,26 +189,26 @@ nav {
           &.active,
           &.current {
             a {
-              height: 90px;
+              height: 95px;
 
-              &::before {
-                content: " ";
-                background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
-                top: -8%;
-                left: 82%;
-                width: 25px;
-                height: 25px;
-              }
+              // &::before {
+              //   content: " ";
+              //   background: url(../../../assets/img/sideBarHoverTop.svg) no-repeat;
+              //   top: -8%;
+              //   left: 82%;
+              //   width: 25px;
+              //   height: 25px;
+              // }
 
-              &::after {
-                content: " ";
-                background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
-                bottom: -8%;
-                left: 81%;
-                opacity: 1;
-                width: 25px;
-                height: 25px;
-              }
+              // &::after {
+              //   content: " ";
+              //   background: url(../../../assets/img/sideBarHoverBottom.svg) no-repeat;
+              //   bottom: -8%;
+              //   left: 81%;
+              //   opacity: 1;
+              //   width: 25px;
+              //   height: 25px;
+              // }
             }
           }
         }
@@ -240,6 +243,26 @@ nav {
           a {
             height: 75px;
           }
+
+          &.active,
+          &.current {
+            a {
+
+              &::before {
+                content: " ";
+                background: url(../../../assets/img/hoverFull.svg);
+                background-size: 110%;
+                background-repeat: no-repeat;
+                background-position: center left;
+                bottom: 0;
+                opacity: 1;
+                width: 100%;
+                height: 100%;
+              }
+
+
+            }
+          }
         }
       }
     }
@@ -270,23 +293,7 @@ nav {
             }
           }
 
-          &.active,
-          &.current {
-            a {
-              background-size: cover;
-              background-position: 0px 61%;
 
-              &::before {
-                top: -4%;
-                left: 74%;
-              }
-
-              &::after {
-                bottom: -6%;
-                left: 74%;
-              }
-            }
-          }
         }
       }
 
@@ -324,16 +331,21 @@ nav {
 
       ul li.active a,
       ul li.current a {
-        background-position: left;
+        // background-position: left;
 
-        &::before {
-          top: -4%;
-          left: 65%;
-        }
+        // &::before {
+        //   top: -4%;
+        //   left: 65%;
+        // }
 
-        &::after {
-          bottom: -6%;
-          left: 65%;
+        // &::after {
+        //   bottom: -6%;
+        //   left: 65%;
+        // }
+        .ci {
+          padding-top: 72px;
+          height: 20px;
+          width: 20px;
         }
       }
 
@@ -352,6 +364,12 @@ nav {
       .sidebar-info {
         position: absolute;
         bottom: 0;
+
+        .bonus-amount,
+        .h4,
+        .bottomLogo {
+          position: unset;
+        }
 
         h4 {
           font-size: 1.2rem;
