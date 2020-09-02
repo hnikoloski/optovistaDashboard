@@ -121,7 +121,25 @@ nav {
   }
 }
 
-@media (max-width: 1024px) {
+// @media(max-width:1196px) {
+//   nav {
+//     .top-menu {
+//       ul {
+
+//         li {
+
+
+//           .profile-picture-wrapper {
+//             width: 35px
+//           }
+//         }
+//       }
+//     }
+//   }
+
+// }
+
+@media (max-width: 1196px) {
   nav {
     .top-menu {
       ul {
@@ -140,6 +158,11 @@ nav {
               width: 100%;
               height: auto;
             }
+          }
+
+          p {
+            padding: 0;
+            font-size: 1.4rem;
           }
         }
       }
