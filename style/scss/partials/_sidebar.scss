@@ -126,7 +126,7 @@ nav {
       .bottomLogo {
         background-color: #fff;
         height: 40px;
-        width: 100%;
+        width: 60%;
         margin: 0 auto;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -210,6 +210,24 @@ nav {
           }
         }
       }
+
+      .sidebar-info {
+        margin-top: 0;
+
+        .bottomLogo {
+          width: 100%;
+        }
+
+        h5 {
+          font-size: 1.5rem;
+          padding: 10px 20px;
+        }
+
+        .side-delimiter {
+          height: 25px;
+          margin: 10px auto;
+        }
+      }
     }
   }
 }
@@ -256,7 +274,7 @@ nav {
           &.current {
             a {
               background-size: cover;
-              background-position: 14px 61%;
+              background-position: 0px 61%;
 
               &::before {
                 top: -4%;
@@ -269,6 +287,22 @@ nav {
               }
             }
           }
+        }
+      }
+
+      .sidebar-info {
+        .side-delimiter {
+          display: none;
+        }
+
+        .bottomLogo {
+          position: absolute;
+          bottom: 0;
+        }
+
+        .bonus-amount {
+          position: absolute;
+          bottom: 10%;
         }
       }
     }
@@ -335,9 +369,7 @@ nav {
 
         }
 
-        .side-delimiter {
-          display: none;
-        }
+
 
         .bottomLogo {
           width: 100%;

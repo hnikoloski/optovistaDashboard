@@ -34,4 +34,8 @@
   .sw.sw-justified>.nav .nav-link {
     width: 85px;
   }
+
+  .sw.sw-justified>.nav>li::after {
+    width: 11%;
+  }
 }

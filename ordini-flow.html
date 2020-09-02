@@ -65,7 +65,11 @@
       </div>
       <div class="col-sm-4 top-menu">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <li
+            class="nav-item fav-modal-open"
+            data-toggle="modal"
+            data-target="#fav-modal"
+          >
             <a href="#!">
               <img
                 src="./assets/img/icons/star.svg"
@@ -84,9 +88,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <p>Mario Rossi</p>
+            <p class="userFullName">Mario Rossi</p>
           </li>
-          <li class="nav-item">
+          <li class="nav-item userToolbar">
             <div class="profile-picture-wrapper">
               <img
                 src="./assets/img/profilePicture.png"
@@ -95,6 +99,23 @@
             </div>
           </li>
         </ul>
+        <div class="notificationWindow">
+          <div class="singleNotification">
+            <h3>OFFERTA SPECIALE</h3>
+            <p>20% di sconto su tutte le lenti progressive</p>
+          </div>
+          <hr />
+          <div class="singleNotification">
+            <h3>OFFERTA SPECIALE</h3>
+            <p>20% di sconto su tutte le lenti progressive</p>
+          </div>
+        </div>
+        <div class="userInfo">
+          <ul>
+            <li><a href="#!">Profile</a></li>
+            <li><a href="#!">Log Out</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -825,7 +846,7 @@
                             il prodotto selezionato.
                           </p> -->
                           <div class="row mb-5">
-                            <div class="col-sm-7 mb-5">
+                            <div class="col-lg-7 mb-5">
                               <form action="" id="moduloForm">
                                 <div class="cChecks row">
                                   <div class="col-lg-4 mb-4 responsive-50">
@@ -960,7 +981,7 @@
                                 </ul>
                               </form>
                             </div>
-                            <div class="col-sm-5">
+                            <div class="col-lg-5">
                               <div class="img-wrapper graph">
                                 <img src="./assets/img/graph.jpg" alt="" />
                               </div>

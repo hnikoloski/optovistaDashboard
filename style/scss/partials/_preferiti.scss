@@ -13,16 +13,16 @@
       @include boldFont();
       margin-left: 48px;
       position: relative;
-// &::before {
-//   content: " ";
-//   background: url('../../../assets/img/icons/star.svg');
-//   @include bg-props(cover, center, no-repeat);
-//   position: absolute;
-//   bottom: 5px;
-//   left: -36px;
-//   height: 30px;
-//   width: 30px;
-// }
+      // &::before {
+      //   content: " ";
+      //   background: url('../../../assets/img/icons/star.svg');
+      //   @include bg-props(cover, center, no-repeat);
+      //   position: absolute;
+      //   bottom: 5px;
+      //   left: -36px;
+      //   height: 30px;
+      //   width: 30px;
+      // }
     }
 
     section {
@@ -61,6 +61,45 @@
 
           .cardLink {
             margin-bottom: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:1440px) {
+
+  .content-wrapper {
+    main {
+      section {
+        &.preferiti {
+          // padding: 0 11% 0 0;
+
+          .modal-card {
+            img {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:1024px) {
+
+  .content-wrapper {
+    main {
+      section {
+        &.preferiti {
+          .modal-card {
+            height: auto;
+
+            button {
+              padding: 15px 0;
+              font-size: 1rem;
+            }
           }
         }
       }

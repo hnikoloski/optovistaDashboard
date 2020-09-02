@@ -40,10 +40,12 @@
 
           .imgWrapper {
             max-height: 400px;
+            width: 60%;
+            margin: 0 auto;
 
             img {
               height: auto;
-              width: auto;
+              width: 100%;
             }
           }
 

@@ -25,11 +25,14 @@
       }
 
       .leftSection {
-        background: url("../../../assets/img/icons/badge.svg");
-        @include bg-props(cover, left center, no-repeat);
+        background: url(../../../assets/img/icons/badgeDesktop.png);
+        background-size: cover;
+        background-position: 90% 0;
+        background-repeat: no-repeat;
         max-height: 70px;
         max-width: 350px;
         width: 350px;
+
         @include boldFont();
       }
 
@@ -446,7 +449,6 @@
         }
       }
 
-
       section {
         &.analyitics {
           .companyInfoContainer .companyInfo .buttons-wrapper {
@@ -454,11 +456,19 @@
 
             a {
               display: block;
+
+              i {
+                font-size: 1rem;
+              }
             }
           }
 
           .cardsContainer {
             .container-card {
+              &.middleContainer .companyTable .buttons-wrapper a i {
+                font-size: 1rem;
+              }
+
               &.rightContainer {
                 .companyTable {
                   table {

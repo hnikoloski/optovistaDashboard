@@ -56,50 +56,84 @@
 
     <div class="container-fluid content-wrapper">
       <div class="row">
-        <nav
-          id="sidebarMenu"
-          class="col-md-3 col-lg-2 d-md-block sidebar collapse"
-        >
-          <div class="sidebar-sticky pt-3 text-center">
-            <div class="logoWrapper">
-              <img src="./assets/img/logo.png" alt="Logo" />
-              <h3>Ottica Milano</h3>
-            </div>
-            <ul class="nav flex-column">
-              <li class="nav-item side-item current">
-                <a class="nav-link" href="./login.html">
-                  <div class="ci ci-home"></div>
-                  Log in <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item side-item">
-                <a class="nav-link" href="./register.html">
-                  <div class="ci ci-cart"></div>
-                  Registrati
-                </a>
-              </li>
-              <li class="nav-item side-item">
-                <a class="nav-link" href="#">
-                  <div class="ci ci-computer"></div>
+        <nav class="navbar sticky-top flex-md-nowrap shadow topNav">
+          <button
+            class="navbar-toggler position-absolute d-md-none collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#sidebarMenu"
+            aria-controls="sidebarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="col-sm-4">
+            <span class="search-icon"></span>
+            <!-- <img src="./assets/img/icons/search.svg" alt="Search Icon" /> -->
 
-                  TUTORIAL
+            <input
+              class="search-form form-control"
+              type="text"
+              aria-label="Search"
+            />
+          </div>
+          <div class="col-sm-4 logo">
+            <img src="./assets/img/icons/UNO.svg" alt="uno logo" />
+          </div>
+          <div class="col-sm-4 top-menu">
+            <ul class="navbar-nav">
+              <li
+                class="nav-item fav-modal-open"
+                data-toggle="modal"
+                data-target="#fav-modal"
+              >
+                <a href="#!">
+                  <img
+                    src="./assets/img/icons/star.svg"
+                    alt="Star Icon"
+                    class="icons"
+                  />
                 </a>
               </li>
-              <li class="nav-item side-item">
-                <a class="nav-link" href="#">
-                  <div class="ci ci-book"></div>
-
-                  CATALOGHI
+              <li class="nav-item hasNotification">
+                <a href="#!">
+                  <img
+                    src="./assets/img/icons/bell.svg"
+                    alt="Notification Icon"
+                    class="icons"
+                  />
                 </a>
               </li>
-              <li class="nav-item side-item">
-                <a class="nav-link" href="#">
-                  <div class="ci ci-discount"></div>
-
-                  OFFERTE
-                </a>
+              <li class="nav-item">
+                <p class="userFullName">Mario Rossi</p>
+              </li>
+              <li class="nav-item userToolbar">
+                <div class="profile-picture-wrapper">
+                  <img
+                    src="./assets/img/profilePicture.png"
+                    alt="Profile Picture"
+                  />
+                </div>
               </li>
             </ul>
+            <div class="notificationWindow">
+              <div class="singleNotification">
+                <h3>OFFERTA SPECIALE</h3>
+                <p>20% di sconto su tutte le lenti progressive</p>
+              </div>
+              <hr />
+              <div class="singleNotification">
+                <h3>OFFERTA SPECIALE</h3>
+                <p>20% di sconto su tutte le lenti progressive</p>
+              </div>
+            </div>
+            <div class="userInfo">
+              <ul>
+                <li><a href="#!">Profile</a></li>
+                <li><a href="#!">Log Out</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
 
@@ -199,9 +233,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <p>
-              Inserisci il tuo indirizzo email e te ne invieremo una nuova.
-            </p>
+            <p>Inserisci il tuo indirizzo email e te ne invieremo una nuova.</p>
             <form action="" class="text-center align-self-center register">
               <div class="row">
                 <div class="form-group col-sm-12"></div>

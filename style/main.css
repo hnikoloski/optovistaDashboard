@@ -291,7 +291,7 @@ nav#sidebarMenu .sidebar-info .side-delimiter {
 nav#sidebarMenu .sidebar-info .bottomLogo {
   background-color: #fff;
   height: 40px;
-  width: 100%;
+  width: 60%;
   margin: 0 auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -345,6 +345,20 @@ nav#sidebarMenu ul li.active a::after, nav#sidebarMenu ul li.current a::after {
     width: 25px;
     height: 25px;
   }
+  nav#sidebarMenu .sidebar-info {
+    margin-top: 0;
+  }
+  nav#sidebarMenu .sidebar-info .bottomLogo {
+    width: 100%;
+  }
+  nav#sidebarMenu .sidebar-info h5 {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+  nav#sidebarMenu .sidebar-info .side-delimiter {
+    height: 25px;
+    margin: 10px auto;
+  }
 }
 @media (max-width: 1366px) {
   nav#sidebarMenu ul li a {
@@ -367,7 +381,7 @@ nav#sidebarMenu ul li.active a::after, nav#sidebarMenu ul li.current a::after {
   }
   nav#sidebarMenu ul li.active a, nav#sidebarMenu ul li.current a {
     background-size: cover;
-    background-position: 14px 61%;
+    background-position: 0px 61%;
   }
   nav#sidebarMenu ul li.active a::before, nav#sidebarMenu ul li.current a::before {
     top: -4%;
@@ -376,6 +390,17 @@ nav#sidebarMenu ul li.active a::after, nav#sidebarMenu ul li.current a::after {
   nav#sidebarMenu ul li.active a::after, nav#sidebarMenu ul li.current a::after {
     bottom: -6%;
     left: 74%;
+  }
+  nav#sidebarMenu .sidebar-info .side-delimiter {
+    display: none;
+  }
+  nav#sidebarMenu .sidebar-info .bottomLogo {
+    position: absolute;
+    bottom: 0;
+  }
+  nav#sidebarMenu .sidebar-info .bonus-amount {
+    position: absolute;
+    bottom: 10%;
   }
 }
 @media (max-width: 768px) {
@@ -420,9 +445,6 @@ nav#sidebarMenu ul li.current a::after {
     width: 100%;
     padding: 15px 10px;
     font-size: 1.6rem;
-  }
-  nav#sidebarMenu .sidebar-info .side-delimiter {
-    display: none;
   }
   nav#sidebarMenu .sidebar-info .bottomLogo {
     width: 100%;
@@ -499,9 +521,9 @@ nav#sidebarMenu ul li.current a::after {
   text-align: center;
 }
 .content-wrapper main .dashboard-message .leftSection {
-  background: url("../../../assets/img/icons/badge.svg");
+  background: url(../../../assets/img/icons/badgeDesktop.png);
   background-size: cover;
-  background-position: left center;
+  background-position: 90% 0;
   background-repeat: no-repeat;
   max-height: 70px;
   max-width: 350px;
@@ -828,6 +850,12 @@ nav#sidebarMenu ul li.current a::after {
   }
   .content-wrapper main section.analyitics .companyInfoContainer .companyInfo .buttons-wrapper a {
     display: block;
+  }
+  .content-wrapper main section.analyitics .companyInfoContainer .companyInfo .buttons-wrapper a i {
+    font-size: 1rem;
+  }
+  .content-wrapper main section.analyitics .cardsContainer .container-card.middleContainer .companyTable .buttons-wrapper a i {
+    font-size: 1rem;
   }
   .content-wrapper main section.analyitics .cardsContainer .container-card.rightContainer .companyTable table th {
     font-size: 1.2rem;
@@ -1768,7 +1796,6 @@ footer .logo-wrapper img {
   color: #2B2B2B;
   line-height: 1.5;
 }
-.content-wrapper section.ordini-flow .tab-pane#step-4 #additionalProductInfo1,
 .content-wrapper section.ordini-flow .tab-pane#step-4 #additionalProductInfo2 {
   display: none;
 }
@@ -2340,6 +2367,26 @@ footer .logo-wrapper img {
   .content-wrapper section.ordini-flow .tab-pane#step-5 table.inputTable tr td input {
     width: 100px;
   }
+  .content-wrapper section.ordini-flow .flowSection .checkBox {
+    top: 75%;
+    position: absolute;
+    right: 20%;
+  }
+  .content-wrapper section.ordini-flow .flowSection .checkBoxLabel {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+  }
+}
+@media (max-width: 1300px) {
+  .content-wrapper main .main-top-bar .bar-content-wrapper a h3::before {
+    left: 30%;
+  }
+
+  .content-wrapper main section.analyitics .companyTable.uploadCompany h5,
+.content-wrapper main section.analyitics .companyTable.uploadPerson h5 {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 1024px) {
   .responsive-100 {
@@ -2352,8 +2399,32 @@ footer .logo-wrapper img {
     flex: 0 0 50%;
   }
 
+  .content-wrapper main .main-top-bar .bar-content-wrapper a h3::before {
+    left: 25%;
+  }
   .content-wrapper section.ordini-flow .tab-pane#step-5 label {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .content-wrapper main .main-top-bar .bar-content-wrapper a h3::before {
+    left: 20%;
+  }
+  .content-wrapper section.ordini-flow .tab-pane#step-5 table.inputTable tr td input {
+    width: 100%;
+  }
+  .content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm ul li input {
+    width: 100%;
+    height: 30px;
+  }
+  .content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm .cChecks label h4 {
+    font-size: 2rem;
+  }
+  .content-wrapper section.ordini-flow .flowSection .checkBox {
+    right: 15%;
+  }
+  .content-wrapper section.ordini-flow .flowSection .checkBox .checkBoxLabel {
+    right: 30%;
   }
 }
 @font-face {
@@ -2406,6 +2477,20 @@ footer .logo-wrapper img {
   margin-bottom: 35px;
 }
 
+@media (max-width: 1440px) {
+  .content-wrapper main section.preferiti .modal-card img {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .content-wrapper main section.preferiti .modal-card {
+    height: auto;
+  }
+  .content-wrapper main section.preferiti .modal-card button {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+}
 @font-face {
   font-family: "IstokWeb";
   src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
@@ -2606,6 +2691,11 @@ main section.registerForm .cardsContainer .container-card {
   }
 }
 
+@media (max-width: 1440px) {
+  .content-wrapper main section.tutorial .modal-card {
+    height: auto;
+  }
+}
 @font-face {
   font-family: "IstokWeb";
   src: local("IstokWeb"), url(../../../assets/fonts/IstokWeb-Regular.ttf);
@@ -2645,10 +2735,12 @@ main section.registerForm .cardsContainer .container-card {
 }
 .content-wrapper main section.catalog .modal-card .imgWrapper {
   max-height: 400px;
+  width: 60%;
+  margin: 0 auto;
 }
 .content-wrapper main section.catalog .modal-card .imgWrapper img {
   height: auto;
-  width: auto;
+  width: 100%;
 }
 .content-wrapper main section.catalog .modal-card h4 {
   text-align: center;
@@ -2727,6 +2819,10 @@ main section.registerForm .cardsContainer .container-card {
   .sw.sw-justified > .nav > li,
 .sw.sw-justified > .nav .nav-link {
     width: 85px;
+  }
+
+  .sw.sw-justified > .nav > li::after {
+    width: 11%;
   }
 }
 * {

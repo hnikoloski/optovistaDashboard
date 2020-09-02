@@ -398,7 +398,6 @@
 
         &#step-4 {
 
-          #additionalProductInfo1,
           #additionalProductInfo2 {
             display: none;
           }
@@ -1176,7 +1175,6 @@
 
 @media (max-width: 1440px) {
 
-
   .content-wrapper {
     section {
       &.ordini-flow {
@@ -1195,10 +1193,52 @@
             }
           }
         }
+
+
+
+        .flowSection {
+          .checkBox {
+            top: 75%;
+            position: absolute;
+            right: 20%;
+          }
+
+          .checkBoxLabel {
+            position: absolute;
+            top: 30%;
+            right: 20%;
+          }
+        }
       }
 
     }
   }
+}
+
+@media(max-width:1300px) {
+  .content-wrapper {
+    main {
+      .main-top-bar {
+        .bar-content-wrapper {
+          a {
+            h3 {
+              &::before {
+                left: 30%;
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+  .content-wrapper main section.analyitics .companyTable.uploadCompany h5,
+  .content-wrapper main section.analyitics .companyTable.uploadPerson h5 {
+    font-size: 1rem;
+  }
+
 }
 
 @media(max-width:1024px) {
@@ -1218,12 +1258,95 @@
   }
 
   .content-wrapper {
+    main {
+      .main-top-bar {
+        .bar-content-wrapper {
+          a {
+            h3 {
+              &::before {
+                left: 25%;
+              }
+            }
+          }
+        }
+      }
+    }
+
     section {
       &.ordini-flow {
         .tab-pane {
           &#step-5 {
             label {
               display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:768px) {
+  .content-wrapper {
+    main {
+      .main-top-bar {
+        .bar-content-wrapper {
+          a {
+            h3 {
+              &::before {
+                left: 20%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    section {
+      &.ordini-flow {
+        .tab-pane {
+          &#step-5 {
+            table {
+              &.inputTable {
+                tr {
+                  td {
+                    input {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+
+            #moduloForm {
+              ul {
+                li {
+                  input {
+                    width: 100%;
+                    height: 30px;
+                  }
+                }
+              }
+
+
+
+              .cChecks {
+                label {
+                  h4 {
+                    font-size: 2rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .flowSection {
+          .checkBox {
+            right: 15%;
+
+            .checkBoxLabel {
+              right: 30%;
             }
           }
         }
