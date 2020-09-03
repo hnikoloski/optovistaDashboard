@@ -2030,7 +2030,7 @@ footer .logo-wrapper img {
 }
 .content-wrapper section.ordini-flow .flowSection label {
   color: #2B2B2B;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .content-wrapper section.ordini-flow .flowSection input,
 .content-wrapper section.ordini-flow .flowSection select {
@@ -2176,6 +2176,15 @@ footer .logo-wrapper img {
 @media (max-width: 1120px) {
   .content-wrapper main .main-top-bar .bar-content-wrapper a h3::before {
     left: 25%;
+  }
+
+  .responsive-50 .form-check {
+    padding-left: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .content-wrapper section.ordini-flow .flowSection label {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 768px) {
