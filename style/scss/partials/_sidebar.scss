@@ -331,6 +331,11 @@ nav {
 
 @media (max-width: 1120px) {
 
+  nav#sidebarMenu ul li.active a::before,
+  nav#sidebarMenu ul li.current a::before {
+    background-size: 95%;
+  }
+
   nav#sidebarMenu ul li a .ci,
   nav#sidebarMenu ul li.current a .ci {
     padding-top: 55px;
