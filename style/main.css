@@ -314,7 +314,7 @@ nav#sidebarMenu ul li.active a::before, nav#sidebarMenu ul li.current a::before 
   height: 100%;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1441px) {
   nav#sidebarMenu ul li a {
     height: 70px;
   }
@@ -338,9 +338,9 @@ nav#sidebarMenu ul li.current a .ci {
   nav#sidebarMenu ul li.active a::before, nav#sidebarMenu ul li.current a::before {
     content: " ";
     background: url(../../../assets/img/icons/hoverFull.svg);
-    background-size: 85%;
+    background-size: 90%;
     background-repeat: no-repeat;
-    background-position: 135% 50%;
+    background-position: 175% 50%;
     bottom: 0;
     opacity: 1;
     width: 100%;

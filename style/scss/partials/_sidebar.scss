@@ -180,7 +180,7 @@ nav {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1441px) {
 
   // nav#sidebarMenu ul li a .ci {
   //   padding-top: 55px;
@@ -221,9 +221,9 @@ nav {
               &::before {
                 content: " ";
                 background: url(../../../assets/img/icons/hoverFull.svg);
-                background-size: 85%;
+                background-size: 90%;
                 background-repeat: no-repeat;
-                background-position: 135% 50%;
+                background-position: 175% 50%;
                 bottom: 0;
                 opacity: 1;
                 width: 100%;
@@ -285,16 +285,16 @@ nav {
             a {
 
               // &::before {
- //   content: " ";
- //   background: url(../../../assets/img/hoverFull.svg);
- //   background-size: 110%;
- //   background-repeat: no-repeat;
- //   background-position: center left;
- //   bottom: 0;
- //   opacity: 1;
- //   width: 100%;
- //   height: 100%;
- // }
+              //   content: " ";
+              //   background: url(../../../assets/img/hoverFull.svg);
+              //   background-size: 110%;
+              //   background-repeat: no-repeat;
+              //   background-position: center left;
+              //   bottom: 0;
+              //   opacity: 1;
+              //   width: 100%;
+              //   height: 100%;
+              // }
 
 
             }
