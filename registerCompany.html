@@ -110,51 +110,57 @@
     <div class="container-fluid content-wrapper">
       <div class="row">
         <nav
-          id="sidebarMenu"
-          class="col-md-3 col-lg-2 d-md-block sidebar collapse"
-        >
-          <div class="sidebar-sticky pt-3 text-center">
-            <div class="logoWrapper">
-              <img src="./assets/img/logo.png" alt="Logo" />
-              <h3>Ottica Milano</h3>
-            </div>
-            <ul class="nav flex-column">
-              <li class="nav-item side-item current">
-                <a class="nav-link" href="#">
-                  <div class="ci ci-home"></div>
-                  Home <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <!-- <li class="nav-item side-item">
-                <a class="nav-link" href="#">
-                  <div class="ci ci-cart"></div>
-                  Ordini
-                </a>
-              </li> -->
-              <li class="nav-item side-item">
-                <a class="nav-link" href="#">
-                  <div class="ci ci-computer"></div>
-
-                  TUTORIAL
-                </a>
-              </li>
-              <li class="nav-item side-item">
-                <a class="nav-link" href="#">
-                  <div class="ci ci-book"></div>
-
-                  CATALOGHI
-                </a>
-              </li>
-              <!-- <li class="nav-item side-item">
-                <a class="nav-link" href="#">
-                  <div class="ci ci-discount"></div>
-
-                  OFFERTE
-                </a>
-              </li> -->
-            </ul>
+        id="sidebarMenu"
+        class="col-md-3 col-lg-2 d-md-block sidebar collapse"
+      >
+        <div class="sidebar-sticky pt-3 text-center">
+          <div class="logoWrapper">
+            <img src="./assets/img/logo.png" alt="Logo" />
+            <h3>Ottica Milano</h3>
           </div>
-        </nav>
+          <ul class="nav flex-column">
+            <li class="nav-item side-item">
+              <a class="nav-link" href="/index.html">
+                <div class="ci ci-home"></div>
+                <p>Dashboard <span class="sr-only">(current)</span></p>
+              </a>
+            </li>
+            <li class="nav-item side-item current">
+              <a class="nav-link" href="/ordini.html">
+                <div class="ci ci-cart"></div>
+                <p>Ordini</p>
+              </a>
+            </li>
+            <li class="nav-item side-item">
+              <a class="nav-link" href="/tutorial.html">
+                <div class="ci ci-computer"></div>
+                <p>Tutorial</p>
+              </a>
+            </li>
+            <li class="nav-item side-item">
+              <a class="nav-link" href="/catalog.html">
+                <div class="ci ci-book"></div>
+                <p>Cataloghi</p>
+              </a>
+            </li>
+            <li class="nav-item side-item">
+              <a class="nav-link" href="#!">
+                <div class="ci ci-discount"></div>
+                <p>Offerte</p>
+              </a>
+            </li>
+          </ul>
+
+          <div class="sidebar-info">
+            <h4>Eurobonus:</h4>
+            <div class="bonus-amount"><h5>3446</h5></div>
+            <div class="side-delimiter"></div>
+            <div class="bottomLogo">
+              <img src="./assets/img/bottomLogo.svg" alt="bottom logo" />
+            </div>
+          </div>
+        </div>
+      </nav>
         <!-- Partita Iva, Sidebar Oridi offerte  Remove -->
         <main role="main grayBg" class="col">
           <section class="container-fluid registerForm registerCompany">

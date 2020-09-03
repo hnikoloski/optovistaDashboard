@@ -321,7 +321,7 @@ nav#sidebarMenu ul li.active a::before, nav#sidebarMenu ul li.current a::before 
   nav#sidebarMenu ul li.active a::before, nav#sidebarMenu ul li.current a::before {
     background-size: 90%;
     background-repeat: no-repeat;
-    background-position: 165% 50%;
+    background-position: 145% 50%;
   }
   nav#sidebarMenu .sidebar-info {
     margin-top: 0;
