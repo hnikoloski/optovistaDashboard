@@ -398,7 +398,9 @@ nav {
   }
 
   nav#sidebarMenu ul li.active a p,
-  nav#sidebarMenu ul li.current a p {}
+  nav#sidebarMenu ul li.current a p {
+    font-size: 0.9rem;
+  }
 
   nav {
 

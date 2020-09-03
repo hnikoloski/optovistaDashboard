@@ -421,6 +421,11 @@ nav#sidebarMenu ul li.current a::before {
     background-size: 99%;
   }
 
+  nav#sidebarMenu ul li.active a p,
+nav#sidebarMenu ul li.current a p {
+    font-size: 0.9rem;
+  }
+
   nav#sidebarMenu ul li a {
     font-size: 1rem;
   }
