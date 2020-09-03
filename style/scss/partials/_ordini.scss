@@ -894,10 +894,12 @@
     left: 25%;
   }
 
-  .responsive-50 {
-    .form-check {
-      padding-left: 0;
-    }
+
+}
+
+.responsive-50 {
+  .form-check {
+    padding-left: 0;
   }
 }
 
@@ -997,7 +999,7 @@
             }
 
             i.ci.ci-arrowDown::before {
-              top: unset;
+              // top: unset;
               bottom: 100%;
             }
           }

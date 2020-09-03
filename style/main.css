@@ -2182,11 +2182,11 @@ footer .logo-wrapper img {
   .content-wrapper main .main-top-bar .bar-content-wrapper a h3::before {
     left: 25%;
   }
-
-  .responsive-50 .form-check {
-    padding-left: 0;
-  }
 }
+.responsive-50 .form-check {
+  padding-left: 0;
+}
+
 @media (max-width: 1024px) {
   .content-wrapper section.ordini-flow .flowSection label {
     font-size: 1.2rem;
@@ -2258,7 +2258,6 @@ footer .logo-wrapper img {
     margin-top: 5px;
   }
   .content-wrapper section.ordini .ordersTable .toggleable i.ci.ci-arrowDown::before {
-    top: unset;
     bottom: 100%;
   }
   .content-wrapper section.ordini-flow .tab-pane#step-2 .flowSection .checkBoxWrapper label {
