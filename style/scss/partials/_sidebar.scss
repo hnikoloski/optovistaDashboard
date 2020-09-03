@@ -392,6 +392,14 @@ nav {
 
 @media (max-width: 768px) {
 
+  nav#sidebarMenu ul li.active a::before,
+  nav#sidebarMenu ul li.current a::before {
+    background-size: 99%;
+  }
+
+  nav#sidebarMenu ul li.active a p,
+  nav#sidebarMenu ul li.current a p {}
+
   nav {
 
     &#sidebarMenu {
