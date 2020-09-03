@@ -181,6 +181,12 @@ nav {
 }
 
 @media (max-width: 1440px) {
+
+  nav#sidebarMenu ul li.active a .ci,
+  nav#sidebarMenu ul li.current a .ci {
+    padding-top: 55px;
+  }
+
   nav {
     &#sidebarMenu {
       ul {
