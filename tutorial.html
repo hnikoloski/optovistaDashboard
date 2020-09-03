@@ -25,83 +25,52 @@
     <link href="./style/main.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar sticky-top flex-md-nowrap shadow topNav">
-      <button
-        class="navbar-toggler position-absolute d-md-none collapsed"
-        type="button"
-        data-toggle="collapse"
-        data-target="#sidebarMenu"
-        aria-controls="sidebarMenu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="col-sm-4">
-        <span class="search-icon"></span>
-        <!-- <img src="./assets/img/icons/search.svg" alt="Search Icon" /> -->
-
-        <input
-          class="search-form form-control"
-          type="text"
-          aria-label="Search"
-        />
-      </div>
-      <div class="col-sm-4 logo">
-        <img src="./assets/img/icons/UNO.svg" alt="uno logo" />
-      </div>
-      <div class="col-sm-4 top-menu">
-        <ul class="navbar-nav">
-          <li
-            class="nav-item fav-modal-open"
-            data-toggle="modal"
-            data-target="#fav-modal"
-          >
-            <a href="#!">
-              <img
-                src="./assets/img/icons/star.svg"
-                alt="Star Icon"
-                class="icons"
-              />
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+      <div class="sidebar-sticky pt-3 text-center">
+        <div class="logoWrapper">
+          <img src="./assets/img/logo.png" alt="Logo" />
+          <h3>Ottica Milano</h3>
+        </div>
+        <ul class="nav flex-column">
+          <li class="nav-item side-item">
+            <a class="nav-link" href="/index.html">
+              <div class="ci ci-home"></div>
+              <p>Dashboard <span class="sr-only">(current)</span></p>
             </a>
           </li>
-          <li class="nav-item hasNotification">
-            <a href="#!">
-              <img
-                src="./assets/img/icons/bell.svg"
-                alt="Notification Icon"
-                class="icons"
-              />
+          <li class="nav-item side-item current">
+            <a class="nav-link" href="/ordini.html">
+              <div class="ci ci-cart"></div>
+              <p>Ordini</p>
             </a>
           </li>
-          <li class="nav-item">
-            <p class="userFullName">Mario Rossi</p>
+          <li class="nav-item side-item">
+            <a class="nav-link" href="/tutorial.html">
+              <div class="ci ci-computer"></div>
+              <p>Tutorial</p>
+            </a>
           </li>
-          <li class="nav-item userToolbar">
-            <div class="profile-picture-wrapper">
-              <img
-                src="./assets/img/profilePicture.png"
-                alt="Profile Picture"
-              />
-            </div>
+          <li class="nav-item side-item">
+            <a class="nav-link" href="/catalog.html">
+              <div class="ci ci-book"></div>
+              <p>Cataloghi</p>
+            </a>
+          </li>
+          <li class="nav-item side-item">
+            <a class="nav-link" href="/p">
+              <div class="ci ci-discount"></div>
+              <p>Offerte</p>
+            </a>
           </li>
         </ul>
-        <div class="notificationWindow">
-          <div class="singleNotification">
-            <h3>OFFERTA SPECIALE</h3>
-            <p>20% di sconto su tutte le lenti progressive</p>
+
+        <div class="sidebar-info">
+          <h4>Eurobonus:</h4>
+          <div class="bonus-amount"><h5>3446</h5></div>
+          <div class="side-delimiter"></div>
+          <div class="bottomLogo">
+            <img src="./assets/img/bottomLogo.svg" alt="bottom logo" />
           </div>
-          <hr />
-          <div class="singleNotification">
-            <h3>OFFERTA SPECIALE</h3>
-            <p>20% di sconto su tutte le lenti progressive</p>
-          </div>
-        </div>
-        <div class="userInfo">
-          <ul>
-            <li><a href="#!">Profile</a></li>
-            <li><a href="#!">Log Out</a></li>
-          </ul>
         </div>
       </div>
     </nav>
@@ -121,19 +90,19 @@
               <li class="nav-item side-item">
                 <a class="nav-link" href="/index.html">
                   <div class="ci ci-home"></div>
-                  <p>Dashboard <span class="sr-only">(current)</span></p>
+                  <p>Dashboard</p>
                 </a>
               </li>
-              <li class="nav-item side-item current">
+              <li class="nav-item side-item">
                 <a class="nav-link" href="/ordini.html">
                   <div class="ci ci-cart"></div>
                   <p>Ordini</p>
                 </a>
               </li>
-              <li class="nav-item side-item">
+              <li class="nav-item side-item current">
                 <a class="nav-link" href="/tutorial.html">
                   <div class="ci ci-computer"></div>
-                  <p>Tutorial</p>
+                  <p>Tutorial<span class="sr-only">(current)</span></p>
                 </a>
               </li>
               <li class="nav-item side-item">
