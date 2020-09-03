@@ -97,6 +97,9 @@ nav {
     .sidebar-info {
       font-size: 1.6rem;
       margin-top: 10%;
+      position: absolute;
+      left: 10%;
+      bottom: 0;
 
       h4 {
         @include boldFont();
@@ -126,7 +129,7 @@ nav {
       .bottomLogo {
         background-color: #fff;
         height: 40px;
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -254,7 +257,7 @@ nav {
         margin-top: 0;
 
         .bottomLogo {
-          width: 95%;
+          width: 100%;
         }
 
         h5 {
@@ -326,7 +329,7 @@ nav {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
 
   nav#sidebarMenu ul li a .ci,
   nav#sidebarMenu ul li.current a .ci {
@@ -361,20 +364,23 @@ nav {
       }
 
       .sidebar-info {
-        .side-delimiter {
-          display: none;
-        }
-
-        .bottomLogo {
-          position: absolute;
-          bottom: 0;
-        }
-
-        .bonus-amount {
-          position: absolute;
-          bottom: 10%;
-        }
+        left: 0%;
       }
+
+      //   .side-delimiter {
+      //     display: none;
+      //   }
+
+      //   .bottomLogo {
+      //     position: absolute;
+      //     bottom: 0;
+      //   }
+
+      //   .bonus-amount {
+      //     position: absolute;
+      //     bottom: 10%;
+      //   }
+      // }
     }
   }
 }

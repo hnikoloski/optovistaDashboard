@@ -256,6 +256,9 @@ nav#sidebarMenu ul li a::before, nav#sidebarMenu ul li a::after {
 nav#sidebarMenu .sidebar-info {
   font-size: 1.6rem;
   margin-top: 10%;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
 }
 nav#sidebarMenu .sidebar-info h4 {
   font-family: "IstokWebBold", sans-serif;
@@ -284,7 +287,7 @@ nav#sidebarMenu .sidebar-info .side-delimiter {
 nav#sidebarMenu .sidebar-info .bottomLogo {
   background-color: #fff;
   height: 40px;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -350,7 +353,7 @@ nav#sidebarMenu ul li.current a .ci {
     margin-top: 0;
   }
   nav#sidebarMenu .sidebar-info .bottomLogo {
-    width: 95%;
+    width: 100%;
   }
   nav#sidebarMenu .sidebar-info h5 {
     font-size: 1.5rem;
@@ -384,7 +387,7 @@ nav#sidebarMenu ul li.current a .ci {
     width: unset;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
   nav#sidebarMenu ul li a .ci,
 nav#sidebarMenu ul li.current a .ci {
     padding-top: 55px;
@@ -403,16 +406,8 @@ nav#sidebarMenu ul li.current a .ci {
     height: 25px;
     width: 25px;
   }
-  nav#sidebarMenu .sidebar-info .side-delimiter {
-    display: none;
-  }
-  nav#sidebarMenu .sidebar-info .bottomLogo {
-    position: absolute;
-    bottom: 0;
-  }
-  nav#sidebarMenu .sidebar-info .bonus-amount {
-    position: absolute;
-    bottom: 10%;
+  nav#sidebarMenu .sidebar-info {
+    left: 0%;
   }
 }
 @media (max-width: 768px) {
@@ -844,7 +839,7 @@ nav#sidebarMenu ul li.current a::after {
     font-size: 1.2rem;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
   .content-wrapper main .dashboard-message .rightSection p {
     font-size: 1.2rem;
   }
@@ -951,7 +946,7 @@ nav#sidebarMenu ul li.current a::after {
   font-weight: 700;
   text-transform: uppercase;
   color: #2B2B2B;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 .content-wrapper main section.catalog .cardsContainer .container-card.leftContainer .catalogCarousel .slick-slide .slide-wrapper p {
   font-size: 1.4rem;
@@ -1410,7 +1405,7 @@ nav .top-menu .userInfo ul li a:hover {
     overflow-y: scroll;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
   .notificationWindow {
     left: unset;
     right: 19%;
@@ -1505,7 +1500,7 @@ footer .logo-wrapper img {
   width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
   footer .logo-wrapper {
     float: left;
     margin-left: -20%;
@@ -1616,6 +1611,7 @@ footer .logo-wrapper img {
   margin-right: 100px;
   border-color: #276462;
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 .content-wrapper section.ordini .ordersTable .toggleable a::after {
   content: " ";
@@ -1889,7 +1885,6 @@ footer .logo-wrapper img {
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  padding: 5%;
 }
 .content-wrapper section.ordini-flow .tab-pane#step-5 #moduloForm .cChecks label h4 {
   font-size: 1rem;
@@ -1983,7 +1978,8 @@ footer .logo-wrapper img {
 }
 .content-wrapper section.ordini-flow .tab-pane#step-7 ul li:nth-child(2) {
   position: relative;
-  margin-left: 20px;
+  margin-top: 20px;
+  display: block;
 }
 .content-wrapper section.ordini-flow .tab-pane#step-7 ul li:nth-child(2) input[type=checkbox] {
   box-shadow: none;
@@ -2089,7 +2085,7 @@ footer .logo-wrapper img {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 25px;
+  top: 0;
   right: -40px;
 }
 .content-wrapper section.ordini-flow .miniCart .container-card {
@@ -2177,7 +2173,7 @@ footer .logo-wrapper img {
   font-weight: 700;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
   .content-wrapper main .main-top-bar .bar-content-wrapper a h3::before {
     left: 25%;
   }
@@ -2397,7 +2393,7 @@ footer .logo-wrapper img {
     font-size: 1rem;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
   .responsive-100 {
     max-width: 100%;
     flex: 0 0 100%;
@@ -2491,7 +2487,7 @@ footer .logo-wrapper img {
     width: 90%;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
   .content-wrapper main section.preferiti .modal-card {
     height: auto;
   }
@@ -2824,7 +2820,7 @@ main section.registerForm .cardsContainer .container-card {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
   .sw.sw-justified > .nav > li,
 .sw.sw-justified > .nav .nav-link {
     width: 85px;

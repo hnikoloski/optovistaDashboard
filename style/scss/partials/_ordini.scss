@@ -121,6 +121,7 @@
             margin-right: 100px;
             border-color: $green;
             margin-bottom: 5px;
+            margin-top: 5px;
 
             &::after {
               content: " ";
@@ -509,7 +510,7 @@
                 border-radius: 25px;
                 cursor: pointer;
                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-                padding: 5%;
+                // padding: 5%;
 
                 h4 {
                   font-size: 1rem;
@@ -659,7 +660,8 @@
 
               &:nth-child(2) {
                 position: relative;
-                margin-left: 20px;
+                margin-top: 20px;
+                display: block;
 
                 input[type="checkbox"] {
                   box-shadow: none;
@@ -775,7 +777,7 @@
                 width: 30px;
                 height: 30px;
                 position: absolute;
-                top: 25px;
+                top: 0;
                 right: -40px;
               }
             }
@@ -887,7 +889,7 @@
   }
 }
 
-@media(max-width:1024px) {
+@media(max-width:1120px) {
   .content-wrapper main .main-top-bar .bar-content-wrapper a h3::before {
     left: 25%;
   }
@@ -1241,7 +1243,7 @@
 
 }
 
-@media(max-width:1024px) {
+@media(max-width:1120px) {
   .responsive-100 {
     max-width: 100%;
     flex: 0 0 100%;
